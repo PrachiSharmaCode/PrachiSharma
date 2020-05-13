@@ -1,0 +1,36 @@
+.contact {
+  background-color: white;
+  margin: 0 0rem 0 0rem;
+  height: 100%;
+  position: relative;
+  padding: 0 !important;
+  margin: 0 !important ;
+  text-align: center;
+}
+
+.contact-inside {
+  color: var(--buttonPriColor);
+  line-height: 1.5;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+
+  padding: 0 0 1rem 0;
+}
+
+a {
+  color: var(--buttonPriColor) !important;
+}
+
+.contactHeading {
+  color: var(--buttonPriColor);
+  font-size: 35px;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  margin: 0 0 0 0 !important;
+  letter-spacing: 1px;
+  font-weight: 900;
+}

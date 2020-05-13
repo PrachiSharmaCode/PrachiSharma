@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css?family=Jost&display=swap");
+
+:root {
+  --webAccentColor: white;
+  /* --buttonPriColor: rgba(140, 108, 48, 0.3); */
+  --buttonPriColor: #bf8229;
+
+  /* --startColor: #ccd9ce;
+  --endColor: #7fada9;
+  --accentColor: #19afbf; */
+
+  --appstartColor: #141f26;
+  --appendColor: #a3d9d9;
+  --accentColor: #f0f1f2;
+
+  --startColor: transparent;
+  --endColor: transparent;
+  --accentColor: #f0f1f2;
+
+  --projectbackground: rgba(255, 255, 255, 0.9);
+  --projectbackgroundHover: rgb(255, 255, 255);
+}
+
+html {
+  scroll-behavior: smooth;
+  /* overflow-y: scroll; */
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    scroll-behavior: auto;
+    /* overflow-y: scroll; */
+  }
+}
+
+body {
+  background-color: transparent;
+  font-family: "Jost", sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-image: linear-gradient(var(--appstartColor), var(--appendColor));
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  /* background: rgba(134, 173, 144, 0.4); */
+  /* background: rgba(225, 225, 0, 0.4); */
+  background-color: var(--buttonPriColor);
+  opacity: 0.4;
+}
+
+/* Handle on hover */
+/* ::-webkit-scrollbar-thumb:hover {
+  background: rgba(225, 225, 0, 0.6);
+} */
+
+.div-heading {
+  color: whitesmoke;
+  letter-spacing: 15px;
+  text-shadow: 2px 2px 4px black;
+}

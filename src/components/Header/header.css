@@ -1,0 +1,76 @@
+.navbar-brand {
+  color: #ffc107 !important;
+  font-size: 1.5vw;
+}
+
+.fixed-top {
+  padding-bottom: 1rem !important;
+}
+.navbar-toggler {
+  background-color: white !important;
+}
+
+.navbar-toggler-icon {
+  background-color: white;
+}
+
+.navbar {
+  background-color: var(--appstartColor) !important;
+  /* background-image: linear-gradient(#8c5946, var(--webAccentColor)); */
+
+  margin: 0 0rem 0rem 0rem;
+  /* border-bottom: #86ad90 2px solid; */
+  /* margin-bottom: 10rem !important; */
+  /* left: 50rem; */
+  /* box-shadow: 5px 5px 5px whitesmoke; */
+}
+
+.greeting {
+  float: left;
+}
+
+.fa {
+  font-size: 25px !important;
+  margin: 0 5px 0 5px;
+}
+
+.fa:hover {
+  color: var(--buttonPriColor);
+  font-size: 25px !important;
+  margin: 0 5px 0 5px;
+}
+
+.socil-link {
+  margin-right: 15%;
+}
+
+.nav-brand-image {
+  border-radius: 100% !important;
+}
+
+.nav-link {
+  font-weight: 800 !important;
+  letter-spacing: 5px;
+  color: var(--appendColor) !important;
+}
+.nav-link:hover {
+  color: var(--buttonPriColor) !important;
+  font-weight: 900 !important;
+}
+
+.navbar-collapse {
+  text-align: center;
+}
+
+.resume-button {
+  margin-top: 0.5rem;
+  background-color: black;
+
+  border: #f2c335 1px solid;
+}
+
+.resume-button:hover {
+  background-color: #f2c335;
+  border: #f2c335 1px solid;
+  color: white;
+}
