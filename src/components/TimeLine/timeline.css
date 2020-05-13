@@ -204,15 +204,12 @@
   .time-description {
     padding: 0rem 0rem 3rem 0rem;
     margin: 0;
-    /* background-color: rgba(225, 225, 0, 0.2); */
 
     color: white;
     text-align: center;
     font-size: 16px;
     letter-spacing: 2px;
     width: 100 !important;
-    /* border-left: white 1px solid;
-    border-right: white 1px solid; */
   }
   .institute-name {
     font-size: 18px;
