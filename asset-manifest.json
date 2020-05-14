@@ -1,18 +1,13 @@
 {
-  "main.css": "static/css/main.d45399a8.css",
-  "main.css.map": "static/css/main.d45399a8.css.map",
-  "main.js": "static/js/main.11733a2c.js",
-  "main.js.map": "static/js/main.11733a2c.js.map",
+  "main.css": "static/css/main.7b997c2d.css",
+  "main.css.map": "static/css/main.7b997c2d.css.map",
+  "main.js": "static/js/main.009dc20a.js",
+  "main.js.map": "static/js/main.009dc20a.js.map",
   "static\\media\\PrachiSharmaWeb.pdf": "static/media/PrachiSharmaWeb.c59bb96b.pdf",
-  "static\\media\\back.JPG": "static/media/back.84dd3458.JPG",
-  "static\\media\\background.JPG": "static/media/background.8403340b.JPG",
-  "static\\media\\backimg.jpg": "static/media/backimg.4f39570c.jpg",
   "static\\media\\fontawesome-webfont.eot?v=4.7.0": "static/media/fontawesome-webfont.674f50d2.eot",
   "static\\media\\fontawesome-webfont.svg?v=4.7.0": "static/media/fontawesome-webfont.912ec66d.svg",
   "static\\media\\fontawesome-webfont.ttf?v=4.7.0": "static/media/fontawesome-webfont.b06871f2.ttf",
   "static\\media\\fontawesome-webfont.woff2?v=4.7.0": "static/media/fontawesome-webfont.af7ae505.woff2",
   "static\\media\\fontawesome-webfont.woff?v=4.7.0": "static/media/fontawesome-webfont.fee66e71.woff",
-  "static\\media\\prachi.JPG": "static/media/prachi.2d6cac26.JPG",
-  "static\\media\\prachiProfile.jpg": "static/media/prachiProfile.a893473e.jpg",
-  "static\\media\\sharma.JPG": "static/media/sharma.6c99967b.JPG"
+  "static\\media\\prachi.JPG": "static/media/prachi.2d6cac26.JPG"
 }
