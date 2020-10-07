@@ -203,6 +203,16 @@
   box-shadow: 5px 5px 10px black;
 }
 
+@media screen and (max-width: 1024px) {
+  .about {
+    background-image: linear-gradient(var(--startColor), var(--endColor));
+    text-align: center;
+    margin: 0 0rem 0 0rem;
+    height: 100%;
+    position: relative;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .about {
     background-image: linear-gradient(var(--startColor), var(--endColor));

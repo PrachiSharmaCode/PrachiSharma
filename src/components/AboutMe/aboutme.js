@@ -1,11 +1,6 @@
 import React, { Component } from "react";
 import Header from "../Header/header";
 import "./aboutme.css";
-import Profile from "../../images/prachiProfile.jpg";
-import Background from "../../images/background.JPG";
-import Back from "../../images/back.JPG";
-import BackImg from "../../images/backimg.jpg";
-import MyImg from "../../images/sharma.JPG";
 import Me from "../../images/prachi.JPG";
 import { Navbar, Nav, Button } from "react-bootstrap";
 import Skills from "../Skills/skills";
@@ -45,7 +40,7 @@ export default class aboutme extends Component {
               href="mailto:prachisharma.edu@gmail.com"
               target="_blank"
             >
-              <i class="fa fa-envelope" aria-hidden="true"></i>
+              <i className="fa fa-envelope" aria-hidden="true"></i>
             </a>
           </span>
           <span>

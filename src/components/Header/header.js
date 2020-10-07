@@ -11,7 +11,11 @@ export default class header extends Component {
   }
   render() {
     return (
-      <Navbar className="sticky-top" bg="light" expand="lg">
+      <Navbar
+        className="sticky-top navbar navbar-dark bg-dark"
+        bg="dark"
+        expand="lg"
+      >
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="">

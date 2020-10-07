@@ -7,11 +7,12 @@
   padding-bottom: 1rem !important;
 }
 .navbar-toggler {
-  background-color: white !important;
+  background-color: transparent !important;
+  border-color: transparent !important;
 }
 
 .navbar-toggler-icon {
-  background-color: white;
+  background-color: var(--appstartColor);
 }
 
 .navbar {

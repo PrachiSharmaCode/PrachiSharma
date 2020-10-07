@@ -8,6 +8,30 @@
   text-align: center;
 }
 
+.contact-message {
+  color: var(--appendColor);
+  text-align: center;
+  padding: 0 0 0.5rem;
+  font-size: 18px;
+  margin: 0 5px;
+}
+
+.socail-icon-contact {
+  letter-spacing: 1.5rem;
+  margin: 2rem 0;
+  text-align: center;
+  display: inline-block;
+}
+
+.icon-contact:hover {
+  color: black;
+}
+
+.mail-contact {
+  margin: 1rem 0 0 0;
+  font-size: 1.5rem;
+}
+
 .contact-inside {
   color: var(--buttonPriColor);
   line-height: 1.5;

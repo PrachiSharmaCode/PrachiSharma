@@ -190,15 +190,14 @@
     padding: 0;
     margin: 0 0 0 0;
     /* border-top: var(--webAccentColor) solid 5px; */
-    border-bottom: var(--appstartColor) solid 3px;
+    border-bottom: var(--buttonPriColor) solid 5px;
     /* border-right: var(--webAccentColor) solid 5px; */
-    color: var(--buttonPriColor);
+    color: white;
     text-align: right;
     font-size: 18px;
     font-weight: 500 !important;
     letter-spacing: 10px;
     width: 50%;
-    /* width: 50%; */
   }
 
   .time-description {
