@@ -16,8 +16,8 @@ export default class header extends Component {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="">
             <Nav.Link onClick={this.topFunction}>ABOUT</Nav.Link>
-            <Nav.Link href="#skillsLink">SKILSS</Nav.Link>
-            <Nav.Link href="#projectsLink">PROJECT</Nav.Link>
+            <Nav.Link href="#skillsLink">SKILLS</Nav.Link>
+            <Nav.Link href="#projectsLink">PROJECTS</Nav.Link>
             <Nav.Link href="#timelineLink">TIMELINE</Nav.Link>
             <Nav.Link href="#contactLink">CONTACT</Nav.Link>
           </Nav>

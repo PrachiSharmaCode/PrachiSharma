@@ -25,7 +25,7 @@ export default class skills extends Component {
             <ul className="list-group list-group-flush">
               <li className="list-group-item list-head">Web Technology</li>
               <li className="list-group-item">React</li>
-              <li className="list-group-item">Angualar</li>
+              <li className="list-group-item">Angular</li>
               <li className="list-group-item">Node</li>
               <li className="list-group-item">HTML</li>
               <li className="list-group-item">CSS</li>
