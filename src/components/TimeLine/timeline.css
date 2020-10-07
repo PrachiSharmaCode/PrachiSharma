@@ -27,7 +27,7 @@
   padding: 0;
   margin: 0 0 0 0;
   /* border-top: var(--webAccentColor) solid 5px; */
-  border-bottom: white solid 5px;
+  border-bottom: var(--buttonPriColor) solid 5px;
   /* border-right: var(--webAccentColor) solid 5px; */
   color: white;
   text-align: right;
@@ -81,7 +81,7 @@
 
 .institute-name {
   font-size: 20px;
-  font-weight: 900;
+  font-weight: 700;
   text-decoration: unset;
 }
 

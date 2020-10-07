@@ -35,20 +35,8 @@
   /* background: rgba(255, 255, 255, 0.6); */
 
   padding: 0;
-  margin: 2rem 0 0 0;
-  /* margin-bottom: 1rem; */
-  /* border: black solid 2px; */
-  /* color: black !important; */
-  /* position: absolute; */
-  /* top: 60%; */
-  /* left: 0; */
-  /* left: 0.3rem; */
-  /* right: 0; */
+  margin: 1rem 0 0 0;
   color: var(--appendColor);
-  /* color: black; */
-  /* border-top: black solid 5px;
-  border-bottom: black solid 5px; */
-  /* border-left: var(--webAccentColor) solid 5px; */
   animation: mySecond 5s 1;
   text-align: center;
   letter-spacing: 5px;
@@ -58,15 +46,7 @@
 
 .social-media-icon-home {
   padding: 0;
-  margin: 5rem 0 0 0;
-  /* margin-bottom: 1rem; */
-  /* border: black solid 2px; */
-  /* color: black !important; */
-  /* position: absolute; */
-  /* top: 75%; */
-  /* left: 0; */
-  /* left: 0.3rem; */
-  /* right: 0; */
+  margin: 3rem 0 0 0;
   color: black;
   /* color: black; */
   /* border-top: black solid 5px;

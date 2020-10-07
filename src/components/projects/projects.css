@@ -10,10 +10,6 @@
   position: relative;
 }
 
-.project-row {
-  /* border-left: #f29b9b 2px solid; */
-}
-
 /* @keyframes myfirst {
   0% {
     right: 5%;
@@ -35,7 +31,7 @@
 }
 
 .col-sm-project {
-  margin: 0 !important;
+  margin: 0 0 2rem 0 !important;
   padding: 0 !important;
   height: 100% !important;
 }

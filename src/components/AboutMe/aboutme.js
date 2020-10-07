@@ -22,10 +22,18 @@ export default class aboutme extends Component {
           <p>
             <strong>
               <em>
-                I am a software Engineer.<br></br>Graduate with Masters degress
-                in Computer Science from Notheastern University, Seattle.
-                <br></br> Currently, working at Pacific Notheastern National
-                Lboratory as Post Master Research Associate.
+                I am a software Engineer.<br></br>
+                Graduate with Masters degress in Computer Science from{" "}
+                <a href="https://www.northeastern.edu/seattle/">
+                  Northeastern University
+                </a>
+                , Seattle.
+                <br></br>
+                Currently, working at{" "}
+                <a href="https://www.pnnl.gov/">
+                  Pacific Northwest National Laboratory
+                </a>{" "}
+                as Post Master Research Associate.
               </em>
             </strong>
           </p>

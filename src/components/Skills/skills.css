@@ -6,7 +6,7 @@
   background-image: linear-gradient(var(--endColor), var(--startColor));
   text-align: center;
   margin: 0 0rem 0 0rem;
-  height: 100vh;
+  height: 100%;
   position: relative;
 }
 
@@ -42,7 +42,7 @@
 
 .list-head {
   /* background-color: white; */
-  color: white;
+  color: var(--buttonPriColor);
   font-size: 24px;
   font-weight: 900;
   padding: 0.5rem;

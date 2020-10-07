@@ -6,9 +6,7 @@ export default class skills extends Component {
     return (
       <div className="skills" id="skillsLink">
         <div>
-          <h1 className="skillHeading div-heading display-4">
-            TECHNICAL SKILLS
-          </h1>
+          <h1 className="skillHeading div-heading display-4">SKILLS</h1>
         </div>
         <div className="row">
           <div className="col-sm shadow col-sm-skills rounded">

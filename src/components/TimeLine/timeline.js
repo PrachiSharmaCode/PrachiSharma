@@ -49,7 +49,7 @@ export default class timeline extends Component {
                 <h4 className="month">( JUN - AUGUST )</h4>
                 <h3 className="time-description">
                   internship at <br></br>
-                  <span className="institute-name"> J.K.TECHNOSOFT</span>
+                  <span className="institute-name"> J.K.Technosoft</span>
                   <i class="fa fa-briefcase" aria-hidden="true"></i>
                   <br></br>
                   as Software Developer Intern

@@ -3,14 +3,14 @@
 :root {
   --webAccentColor: white;
   /* --buttonPriColor: rgba(140, 108, 48, 0.3); */
-  --buttonPriColor: #bf8229;
+  --buttonPriColor: #f2622e;
 
   /* --startColor: #ccd9ce;
   --endColor: #7fada9;
   --accentColor: #19afbf; */
 
-  --appstartColor: #141f26;
-  --appendColor: #a3d9d9;
+  --appstartColor: #171f26;
+  --appendColor: #81878c;
   --accentColor: #f0f1f2;
 
   --startColor: transparent;
