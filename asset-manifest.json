@@ -1,13 +1,28 @@
 {
-  "main.css": "static/css/main.9baff633.css",
-  "main.css.map": "static/css/main.9baff633.css.map",
-  "main.js": "static/js/main.2b174dd2.js",
-  "main.js.map": "static/js/main.2b174dd2.js.map",
-  "static\\media\\PrachiSharmaWeb.pdf": "static/media/PrachiSharmaWeb.c59bb96b.pdf",
-  "static\\media\\fontawesome-webfont.eot?v=4.7.0": "static/media/fontawesome-webfont.674f50d2.eot",
-  "static\\media\\fontawesome-webfont.svg?v=4.7.0": "static/media/fontawesome-webfont.912ec66d.svg",
-  "static\\media\\fontawesome-webfont.ttf?v=4.7.0": "static/media/fontawesome-webfont.b06871f2.ttf",
-  "static\\media\\fontawesome-webfont.woff2?v=4.7.0": "static/media/fontawesome-webfont.af7ae505.woff2",
-  "static\\media\\fontawesome-webfont.woff?v=4.7.0": "static/media/fontawesome-webfont.fee66e71.woff",
-  "static\\media\\prachi.JPG": "static/media/prachi.2d6cac26.JPG"
+  "files": {
+    "main.css": "/PrachiSharma/static/css/main.77b8ea6f.chunk.css",
+    "main.js": "/PrachiSharma/static/js/main.4b665abd.chunk.js",
+    "main.js.map": "/PrachiSharma/static/js/main.4b665abd.chunk.js.map",
+    "runtime-main.js": "/PrachiSharma/static/js/runtime-main.fa3e970e.js",
+    "runtime-main.js.map": "/PrachiSharma/static/js/runtime-main.fa3e970e.js.map",
+    "static/css/2.ab9f26fc.chunk.css": "/PrachiSharma/static/css/2.ab9f26fc.chunk.css",
+    "static/js/2.422c95d1.chunk.js": "/PrachiSharma/static/js/2.422c95d1.chunk.js",
+    "static/js/2.422c95d1.chunk.js.map": "/PrachiSharma/static/js/2.422c95d1.chunk.js.map",
+    "index.html": "/PrachiSharma/index.html",
+    "precache-manifest.eff6191d4e3168a35ca13558aacf7dea.js": "/PrachiSharma/precache-manifest.eff6191d4e3168a35ca13558aacf7dea.js",
+    "service-worker.js": "/PrachiSharma/service-worker.js",
+    "static/css/2.ab9f26fc.chunk.css.map": "/PrachiSharma/static/css/2.ab9f26fc.chunk.css.map",
+    "static/css/main.77b8ea6f.chunk.css.map": "/PrachiSharma/static/css/main.77b8ea6f.chunk.css.map",
+    "static/js/2.422c95d1.chunk.js.LICENSE.txt": "/PrachiSharma/static/js/2.422c95d1.chunk.js.LICENSE.txt",
+    "static/media/PrachiResume.pdf": "/PrachiSharma/static/media/PrachiResume.9021ac57.pdf",
+    "static/media/font-awesome.css": "/PrachiSharma/static/media/fontawesome-webfont.fee66e71.woff",
+    "static/media/prachi.jpg": "/PrachiSharma/static/media/prachi.f8df69a9.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fa3e970e.js",
+    "static/css/2.ab9f26fc.chunk.css",
+    "static/js/2.422c95d1.chunk.js",
+    "static/css/main.77b8ea6f.chunk.css",
+    "static/js/main.4b665abd.chunk.js"
+  ]
 }
