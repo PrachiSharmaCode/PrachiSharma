@@ -1,7 +1,7 @@
 {
   "name": "knowprachi",
   "version": "0.1.0",
-  "homepage": "https://github.com/PrachiSharmaCode/PrachiSharma",
+  "homepage": "https://prachisharma.me/",
   "private": true,
   "dependencies": {
     "@angular-devkit/schematics": "^10.1.4",
