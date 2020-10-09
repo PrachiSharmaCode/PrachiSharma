@@ -100,15 +100,9 @@
 }
 
 .about {
-  background-image: linear-gradient(var(--startColor), var(--endColor));
   text-align: center;
   margin: 0 0rem 0 0rem;
   height: 100vh;
-}
-
-.col-sm-picture {
-  margin: 3rem 0 0 0;
-  text-align: left;
 }
 
 .fa-angle-double-down {

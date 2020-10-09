@@ -5,7 +5,7 @@ import Me from "../../images/prachi.jpg";
 export default class aboutme extends Component {
   render() {
     return (
-      <div className="about">
+      <div className="about" id="aboutLink">
         <img className="profileImg" src={Me} alt="prachi"></img>
         <div className="head-name">
           <h4 className="name">PRACHI SHARMA </h4>

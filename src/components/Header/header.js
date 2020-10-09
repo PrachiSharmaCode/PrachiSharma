@@ -8,17 +8,19 @@ export default class header extends Component {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
   }
+
   render() {
     return (
       <Navbar
+        collapseOnSelect
         className="sticky-top navbar navbar-dark bg-dark"
         bg="dark"
         expand="lg"
       >
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="">
-            <Nav.Link onClick={this.topFunction}>ABOUT</Nav.Link>
+          <Nav>
+            <Nav.Link href="#aboutLink">ABOUT</Nav.Link>
             <Nav.Link href="#projectsLink">PROJECTS</Nav.Link>
             <Nav.Link href="#skillsLink">SKILLS</Nav.Link>
             <Nav.Link href="#timelineLink">TIMELINE</Nav.Link>
