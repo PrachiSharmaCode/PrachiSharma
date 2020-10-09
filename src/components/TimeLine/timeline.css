@@ -1,10 +1,5 @@
 .time {
-  /* height: 100%; */
   margin: 0 0 0 0;
-  /* border-right: var(--webAccentColor) 10px solid;
-  border-left: var(--webAccentColor) 10px solid; */
-  /* border-top: white 5px solid; */
-  /* border-bottom: white 5px solid; */
   position: relative;
   background-image: linear-gradient(var(--endColor), var(--startColor));
 }
@@ -23,12 +18,9 @@
 }
 
 .year {
-  /* background: white; */
   padding: 0;
   margin: 0 0 0 0;
-  /* border-top: var(--webAccentColor) solid 5px; */
   border-bottom: var(--buttonPriColor) solid 5px;
-  /* border-right: var(--webAccentColor) solid 5px; */
   color: white;
   text-align: right;
   font-size: 20px;
@@ -40,14 +32,10 @@
 .time-description {
   padding: 0rem 0rem 0 0rem;
   margin: 0 0 0 0;
-  /* background-color: rgba(225, 225, 0, 0.2); */
-
   color: white;
   text-align: left;
   font-size: 18px;
   letter-spacing: 2px;
-
-  /* border-left: white 3px solid; */
 }
 
 .month {
@@ -57,7 +45,6 @@
   color: black;
   text-align: left;
   letter-spacing: 3px;
-  /* border-left: white 3px solid; */
 }
 
 .location {
@@ -67,7 +54,6 @@
   color: black;
   text-align: left;
   letter-spacing: 3px;
-  /* border-left: white 3px solid; */
 }
 
 .month-between {
@@ -175,24 +161,10 @@
 }
 
 @media screen and (max-width: 600px) {
-  /* .col-sm-1,
-  .col-sm-2,
-  .col-sm-3,
-  .col-sm-4,
-  .col-sm-5,
-  .col-sm-6 {
-    padding: 0 !important;
-    margin: 0 !important;
-    max-width: 50% !important;
-  } */
-
   .year {
-    /* background: white; */
     padding: 0;
     margin: 0 0 0 0;
-    /* border-top: var(--webAccentColor) solid 5px; */
     border-bottom: var(--buttonPriColor) solid 5px;
-    /* border-right: var(--webAccentColor) solid 5px; */
     color: white;
     text-align: right;
     font-size: 18px;
@@ -234,7 +206,6 @@
     color: black;
     text-align: center;
     letter-spacing: 3px;
-    /* border-left: white 3px solid; */
   }
 
   .month-between {
@@ -253,6 +224,5 @@
     color: black;
     text-align: center;
     letter-spacing: 3px;
-    /* border-left: white 3px solid; */
   }
 }

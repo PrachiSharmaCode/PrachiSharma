@@ -25,7 +25,10 @@ export default class Contact extends Component {
           </span>
         </div>
         <div className="socail-icon-contact">
-          <a href="https://github.com/PrachiSharmaCode" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/prachi-sharma-b12147133"
+            target="_blank"
+          >
             <i className="fa fa-linkedin icon-contact"></i>
           </a>
 

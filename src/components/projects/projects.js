@@ -231,11 +231,6 @@ export default class projects extends Component {
                     in specific course or grade, ratio of student based on
                     gender, program, grades.
                   </Card.Text>
-                  {/* <Button variant="primary">
-                    {" "}
-                    GitHub
-                    <i className="fa fa-github"></i>
-                  </Button> */}
                 </Card.Body>
                 <Card.Footer className="text-muted">
                   JAVA, Maven, Rest Web services, JAX-RS, jersey, Hibernate.

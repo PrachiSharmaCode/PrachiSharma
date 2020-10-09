@@ -17,13 +17,7 @@
 
 .navbar {
   background-color: var(--appstartColor) !important;
-  /* background-image: linear-gradient(#8c5946, var(--webAccentColor)); */
-
   margin: 0 0rem 0rem 0rem;
-  /* border-bottom: #86ad90 2px solid; */
-  /* margin-bottom: 10rem !important; */
-  /* left: 50rem; */
-  /* box-shadow: 5px 5px 5px whitesmoke; */
 }
 
 .greeting {

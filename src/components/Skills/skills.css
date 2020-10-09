@@ -10,16 +10,8 @@
   position: relative;
 }
 
-/* @keyframes myfirst {
-  0% {
-    right: 5%;
-  }
-} */
-
 .skills-row {
   margin-right: "0.9rem";
-
-  /* border-left: #f29b9b solid 2px; */
 }
 
 .list-group-item {
@@ -34,14 +26,11 @@
 }
 
 .list-group {
-  /* background-color: black; */
   margin: 1.5rem 3rem 3rem 3rem;
   border-radius: 2%;
-  /* border: white 10px solid; */
 }
 
 .list-head {
-  /* background-color: white; */
   color: var(--buttonPriColor);
   font-size: 24px;
   font-weight: 900;
@@ -68,10 +57,6 @@
 
 .col-sm-skills {
   border-radius: 2rem !important;
-  /* border-left: white 1px solid;
-  border-right: white 1px solid; */
-  /* color: white; */
-  /* background-color: white !important; */
 }
 
 .col-sm {
@@ -121,7 +106,6 @@
   }
 
   .list-head {
-    /* background-color: white; */
     color: white;
     font-size: 20px;
     font-weight: 700;

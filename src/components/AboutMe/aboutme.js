@@ -78,45 +78,6 @@ export default class aboutme extends Component {
           </span>
         </div>
       </div>
-
-      // <div className="about ">
-      //   <div className="row">
-      //     <div className="col-sm col-sm-description">
-      //       <img
-      //         className="profileImg shadow-sm p-3 rounded"
-      //         src={Profile}
-      //         alt="prachi"
-      //       ></img>
-      //     </div>
-      //     <div className="col-sm col-sm-description">
-      //       <h1 className="name display-3">Prachi Sharma</h1>
-      //       <h2 className="role display-4">Software Engineer</h2>
-      //       <button className="btn btn-warning btn-lg btn-block shadow-sm p-3  rounded">
-      //         Resume<i class="fa fa-download" aria-hidden="true"></i>
-      //       </button>
-      //     </div>
-      /* <div className="col-sm col-sm-picture">
-            <img
-              className="profileImg shadow-sm p-3 bg-white"
-              src={Profile}
-              alt="prachi"
-              width="400"
-              height="400"
-            ></img>
-          </div> */
-      //   </div>
-      //   <div className="lead">
-      //     <p>
-      //       <strong>
-      //         <em>
-      //           I am a software Engineer, currently working at Pacific Northwest
-      //           National Laboratory.<br></br> My Software journey started with
-      //           programming language called LOGO,
-      //         </em>
-      //       </strong>
-      //     </p>
-      //   </div>
-      // </div>
     );
   }
 }
