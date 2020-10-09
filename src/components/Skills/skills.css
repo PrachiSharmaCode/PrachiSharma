@@ -89,8 +89,11 @@
     margin-bottom: 0;
   }
 
+  .col-sm-skills {
+    border-radius: 2rem !important;
+  }
+
   .col-sm {
-    margin: 5px 0 0 0;
     padding: 0 !important;
   }
 
