@@ -83,6 +83,7 @@
   font-size: 20px;
   font-weight: 700;
   text-decoration: unset;
+  color: white;
 }
 
 .fa-graduation-cap,
@@ -201,7 +202,7 @@
   }
 
   .time-description {
-    padding: 0rem 0rem 3rem 0rem;
+    padding: 0rem 0rem 0.5rem 0rem;
     margin: 0;
 
     color: white;
@@ -230,7 +231,7 @@
     padding: 3rem 0 0 0;
     margin: 0;
     font-size: 14px;
-    color: var(--buttonPriColor);
+    color: black;
     text-align: center;
     letter-spacing: 3px;
     /* border-left: white 3px solid; */
@@ -240,8 +241,18 @@
     padding: 0 0 0 0;
     margin: 0;
     font-size: 14px;
-    color: var(--buttonPriColor);
+    color: black;
     text-align: center;
     letter-spacing: 3px;
+  }
+
+  .location {
+    padding: 0 0 0 0;
+    margin: 0 0 1.5rem 0;
+    font-size: 14px;
+    color: black;
+    text-align: center;
+    letter-spacing: 3px;
+    /* border-left: white 3px solid; */
   }
 }

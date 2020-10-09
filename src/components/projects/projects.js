@@ -11,7 +11,96 @@ export default class projects extends Component {
           <div className="row">
             <div className="col-sm col-sm-project">
               <Card className="text-center shadow">
-                <Card.Header>The Food Truck Web</Card.Header>
+                <Card.Header>
+                  TRAC (Tracking Restoration and Closure)
+                  <p className="projectLocation">
+                    (Pacific Northwest National Laboratory)
+                  </p>
+                </Card.Header>
+                <Card.Body>
+                  <Card.Text>
+                    Frontend Developer for Tracking Restoration and Closure
+                    project, sponsored by US Department of energy to provide
+                    interactive maps and data on nuclear waste sites, to show
+                    progress towards cleanup and closure of nuclear waste site
+                  </Card.Text>
+                </Card.Body>
+                <Card.Footer className="text-muted">
+                  React, JavaSctipt
+                </Card.Footer>
+              </Card>
+            </div>
+            <div className="col-sm col-sm-project">
+              <Card className="text-center shadow">
+                <Card.Header>
+                  Tank Vapors Data Access and Visualization System
+                  <p className="projectLocation">
+                    (Pacific Northwest National Laboratory)
+                  </p>
+                </Card.Header>
+                <Card.Body>
+                  <Card.Text>
+                    Frontend Developer for establishing an internal web based IH
+                    focused Tank Vapors Data Access and Visualization System
+                    module for Washington River Protection Solutions (WRPS)
+                  </Card.Text>
+                </Card.Body>
+                <Card.Footer className="text-muted">
+                  React, JavaSctipt
+                </Card.Footer>
+              </Card>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-sm col-sm-project">
+              <Card className="text-center shadow">
+                <Card.Header>
+                  Facility Cybersecurity Framework
+                  <p className="projectLocation">
+                    (Pacific Northwest National Laboratory)
+                  </p>
+                </Card.Header>
+                <Card.Body>
+                  <Card.Text>
+                    Developed new features for web-based tool to help facility
+                    owners and operators better manage cybersecurity risks
+                  </Card.Text>
+                </Card.Body>
+                <Card.Footer className="text-muted">
+                  React, JavaSctipt
+                </Card.Footer>
+              </Card>
+            </div>
+            <div className="col-sm col-sm-project">
+              <Card className="text-center shadow">
+                <Card.Header>
+                  Intelligent Load Control
+                  <p className="projectLocation">
+                    (Pacific Northwest National Laboratory)
+                  </p>
+                </Card.Header>
+                <Card.Body>
+                  <Card.Text>
+                    Developed a web based tools to create and maintain
+                    configuration of ditributed energy sources across multiple
+                    buildings.
+                  </Card.Text>
+                </Card.Body>
+                <Card.Footer className="text-muted">
+                  Angular, JavaSctipt, TypeScript
+                </Card.Footer>
+              </Card>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-sm col-sm-project">
+              <Card className="text-center shadow">
+                <Card.Header>
+                  The Food Truck Web
+                  <p className="projectLocation">
+                    (Northeastern University, Seattle)
+                  </p>
+                </Card.Header>
                 <Card.Body>
                   <Card.Text>
                     Developed a website to search food truck by its name, city,
@@ -34,7 +123,12 @@ export default class projects extends Component {
             </div>
             <div className="col-sm col-sm-project">
               <Card className="text-center shadow">
-                <Card.Header className="card-background">StoreMapp</Card.Header>
+                <Card.Header className="card-background">
+                  StoreMapp
+                  <p className="projectLocation">
+                    (Northeastern University, Seattle)
+                  </p>
+                </Card.Header>
                 <Card.Body>
                   <Card.Text>
                     Developed an interface for users to enable quick access to
@@ -58,7 +152,12 @@ export default class projects extends Component {
           <div className="row">
             <div className="col-sm col-sm-project">
               <Card className="text-center shadow">
-                <Card.Header>Allot</Card.Header>
+                <Card.Header>
+                  Allot
+                  <p className="projectLocation">
+                    (Northeastern University, Seattle)
+                  </p>
+                </Card.Header>
                 <Card.Body>
                   <Card.Text>
                     Developed an android application to assign tasks and to keep
@@ -83,7 +182,12 @@ export default class projects extends Component {
             </div>
             <div className="col-sm col-sm-project">
               <Card className="text-center shadow">
-                <Card.Header>Transportation Data Analysis</Card.Header>
+                <Card.Header>
+                  Transportation Data Analysis
+                  <p className="projectLocation">
+                    (Northeastern University, Seattle)
+                  </p>
+                </Card.Header>
                 <Card.Body>
                   <Card.Text>
                     Analyzed the US Department of Transportation’s aviation
@@ -112,31 +216,12 @@ export default class projects extends Component {
           <div className="row">
             <div className="col-sm col-sm-project">
               <Card className="text-center shadow">
-                <Card.Header>Gesture Recognition</Card.Header>
-
-                <Card.Body>
-                  <Card.Text>
-                    Developed a gesture recognition system using MATLAB. It
-                    consists of controlling Power Point presentation by hand
-                    gestures using concepts of complex mathematical theory,
-                    signal processing, data analysis, and programming design.
-                  </Card.Text>
-                  {/* <Button
-                    href="https://github.com/PrachiSharmaCode/ALLOT"
-                    target="_blank"
-                    variant="primary"
-                  >
-                    {" "}
-                    GitHub
-                    <i className="fa fa-github"></i>
-                  </Button> */}
-                </Card.Body>
-                <Card.Footer className="text-muted">MATLAB</Card.Footer>
-              </Card>
-            </div>
-            <div className="col-sm col-sm-project">
-              <Card className="text-center shadow">
-                <Card.Header>Northeastern University’s Website</Card.Header>
+                <Card.Header>
+                  Northeastern University’s Website
+                  <p className="projectLocation">
+                    (Northeastern University, Seattle)
+                  </p>
+                </Card.Header>
                 <Card.Body>
                   <Card.Text>
                     Developed Northeastern University’s align program
@@ -155,6 +240,26 @@ export default class projects extends Component {
                 <Card.Footer className="text-muted">
                   JAVA, Maven, Rest Web services, JAX-RS, jersey, Hibernate.
                 </Card.Footer>
+              </Card>
+            </div>
+            <div className="col-sm col-sm-project">
+              <Card className="text-center shadow">
+                <Card.Header>
+                  Gesture Recognition
+                  <p className="projectLocation">
+                    (Jaipur Engineering College & Research Center)
+                  </p>
+                </Card.Header>
+
+                <Card.Body>
+                  <Card.Text>
+                    Developed a gesture recognition system using MATLAB. It
+                    consists of controlling Power Point presentation by hand
+                    gestures using concepts of complex mathematical theory,
+                    signal processing, data analysis, and programming design.
+                  </Card.Text>
+                </Card.Body>
+                <Card.Footer className="text-muted">MATLAB</Card.Footer>
               </Card>
             </div>
           </div>

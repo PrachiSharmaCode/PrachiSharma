@@ -19,8 +19,8 @@ class App extends Component {
           {" "}
           <AboutMe></AboutMe>
         </div>
-        <Skills></Skills>
         <Projects></Projects>
+        <Skills></Skills>
         <Timeline></Timeline>
         <Contact></Contact>
       </div>

@@ -1,9 +1,6 @@
 import React, { Component } from "react";
-import Header from "../Header/header";
 import "./aboutme.css";
-import Me from "../../images/prachi.JPG";
-import { Navbar, Nav, Button } from "react-bootstrap";
-import Skills from "../Skills/skills";
+import Me from "../../images/prachi.jpg";
 
 export default class aboutme extends Component {
   render() {
@@ -19,13 +16,13 @@ export default class aboutme extends Component {
               <em>
                 I am a software Engineer.<br></br>
                 Graduate with Masters degress in Computer Science from{" "}
-                <a href="https://www.northeastern.edu/seattle/">
+                <a target="_blank" href="https://www.northeastern.edu/seattle/">
                   Northeastern University
                 </a>
                 , Seattle.
                 <br></br>
                 Currently, working at{" "}
-                <a href="https://www.pnnl.gov/">
+                <a target="_blank" href="https://www.pnnl.gov/">
                   Pacific Northwest National Laboratory
                 </a>{" "}
                 as Post Master Research Associate.

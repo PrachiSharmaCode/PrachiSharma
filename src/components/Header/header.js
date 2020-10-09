@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import "./header.css";
 import { Navbar, Nav, Button } from "react-bootstrap";
-import MyImg from "../../images/prachi.JPG";
 import resume from "../../doc/PrachiResume.pdf";
 
 export default class header extends Component {
@@ -20,8 +19,8 @@ export default class header extends Component {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="">
             <Nav.Link onClick={this.topFunction}>ABOUT</Nav.Link>
-            <Nav.Link href="#skillsLink">SKILLS</Nav.Link>
             <Nav.Link href="#projectsLink">PROJECTS</Nav.Link>
+            <Nav.Link href="#skillsLink">SKILLS</Nav.Link>
             <Nav.Link href="#timelineLink">TIMELINE</Nav.Link>
             <Nav.Link href="#contactLink">CONTACT</Nav.Link>
           </Nav>

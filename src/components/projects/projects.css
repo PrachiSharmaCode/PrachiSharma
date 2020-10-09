@@ -10,6 +10,12 @@
   position: relative;
 }
 
+.projectLocation {
+  font-size: 10px !important;
+  margin: 0 !important;
+  text-transform: uppercase;
+}
+
 /* @keyframes myfirst {
   0% {
     right: 5%;
