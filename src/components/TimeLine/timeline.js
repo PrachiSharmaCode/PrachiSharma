@@ -123,12 +123,12 @@ export default class timeline extends Component {
                 <h4 className="location">(Seattle,WA,USA)</h4>
               </div>
               <div className="col-sm-8">
-                <h4 className="year">2019-Current</h4>
+                <h4 className="year">2019-2020</h4>
               </div>
               <div className="col-sm-4">
-                <h4 className="month">( JANUARY )</h4>
+                <h4 className="month">( JANUARY - March 2021 )</h4>
                 <h3 className="time-description">
-                  working at <br></br>
+                  worked at <br></br>
                   <span className="institute-name">
                     Pacific Northwest National Laboratory
                   </span>
@@ -138,6 +138,22 @@ export default class timeline extends Component {
                   Post Master Research Associate
                 </h3>
                 <h4 className="location">(Richland,WA,USA)</h4>
+              </div>
+
+              <div className="col-sm-9">
+                <h4 className="year">2021-Current</h4>
+              </div>
+              <div className="col-sm-3">
+                <h4 className="month">( April )</h4>
+                <h3 className="time-description">
+                  working at <br></br>
+                  <span className="institute-name">AWS, SageMaker</span>
+                  <i class="fa fa-briefcase" aria-hidden="true"></i>
+                  <br></br>
+                  as <br></br>
+                  Frontend Engineer
+                </h3>
+                <h4 className="location">(Seattle,WA,USA)</h4>
               </div>
             </div>
           </div>

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./aboutme.css";
-import Me from "../../images/prachi.jpg";
+import Me from "../../images/prachis.jpg";
 
 export default class aboutme extends Component {
   render() {
@@ -8,13 +8,19 @@ export default class aboutme extends Component {
       <div className="about" id="aboutLink">
         <img className="profileImg" src={Me} alt="prachi"></img>
         <div className="head-name">
+          <div className="lead">
+            <p>
+              <strong>
+                <em>Hello, I am</em>
+              </strong>
+            </p>
+          </div>
           <h4 className="name">PRACHI SHARMA </h4>
         </div>
         <div className="lead">
           <p>
             <strong>
               <em>
-                I am a software Engineer.<br></br>
                 Graduate with Masters degress in Computer Science from{" "}
                 <a target="_blank" href="https://www.northeastern.edu/seattle/">
                   Northeastern University
@@ -22,10 +28,10 @@ export default class aboutme extends Component {
                 , Seattle.
                 <br></br>
                 Currently, working at{" "}
-                <a target="_blank" href="https://www.pnnl.gov/">
-                  Pacific Northwest National Laboratory
+                <a target="_blank" href="https://aws.amazon.com/sagemaker/">
+                  Amazon Web Services, SageMaker
                 </a>{" "}
-                as Post Master Research Associate.
+                as Frontend Engineer.
               </em>
             </strong>
           </p>
