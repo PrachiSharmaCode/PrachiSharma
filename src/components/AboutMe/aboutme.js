@@ -1,89 +1,110 @@
-import React, { Component } from "react";
+import React, { useState, useEffect } from "react";
 import "./aboutme.css";
 import Me from "../../images/prachis.jpg";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 
-export default class aboutme extends Component {
-  render() {
-    return (
-      <div className="about" id="aboutLink">
-        <img className="profileImg" src={Me} alt="prachi"></img>
-        <div className="head-name">
-          <div className="lead">
+
+export default function Aboutme() {
+
+  const [isScrolled, setIsScrolled] = useState(false);
+  let [toolTip, setToolTip] = useState(false);
+
+  const handleScroll = () => {
+    const scrollThreshold = 100;
+    const position = window.pageYOffset;
+    setIsScrolled(position > scrollThreshold);
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  let closeTip = () => {
+    console.log("inside");
+    setToolTip(false);
+  }
+
+  return (
+    <>
+      <div className="main">
+
+        <div className="container-flex">
+          <div>
+            <div className="welcome">
+              <div className="check">
+                <img className="profileImg" src={Me} alt="prachi"></img>
+              </div>
+              <p ><em>Hello, I am</em></p>
+            </div>
+            <div className="introduction">
+              <p className="head-name">PRACHI SHARMA</p>
+            </div>
+          </div>
+          <div className="subContainer-flex">
+            <div className="lead">
+              <p>
+                <em>
+                  I am a software developer based in vibrant city of Seattle. <br></br><br></br> With a background encompassing 5 years of experience in the industry
+                  and a Master's degree in Computer Science from <a className="about-link" target="1" href="https://seattle.northeastern.edu/">Northeastern University <FontAwesomeIcon className="external-link-icon" icon={faArrowUpRightFromSquare} /></a>, I specialize in transforming innovative ideas into interactive digital solutions.<br></br>
+
+                  My expertise lies in frontend development, complemented by a strong understanding of backend technologies.
+                </em>
+              </p>
+
+            </div>
+          </div>
+          {/* <div className="subContainer-flex">
+            <div className="lead">
+              <p>
+                <em>
+                  I am a software developer based in vibrant city of Seattle. <br></br> With a background encompassing 5 years of experience in the industry
+                  and a Master's degree in Computer Science from <a className="about-link" target="1" href="https://seattle.northeastern.edu/">Northeastern University</a>
+                </em>
+              </p>
+
+            </div>
+          </div> */}
+          <div className="opportunity-div">
             <p>
-              <strong>
-                <em>Hello, I am</em>
-              </strong>
+              <em>Take a journey through my portfolio to explore my projects, skills, and experiences. <br></br> If you have an opportunity that aligns with my expertise, I would love to connect and explore the possibilities.</em>
             </p>
           </div>
-          <h4 className="name">PRACHI SHARMA </h4>
+          {
+            !isScrolled && <div className="scroll-down-div">
+              <div className="scroll-down-container">
+                <div className="scroll-down-action"></div>
+              </div>
+            </div>
+          }
         </div>
-        <div className="lead">
-          <p>
-            <strong>
-              <em>
-                Graduate with Masters degress in Computer Science from{" "}
-                <a target="_blank" href="https://www.northeastern.edu/seattle/">
-                  Northeastern University
-                </a>
-                , Seattle.
-                <br></br>
-                Currently, working at{" "}
-                <a target="_blank" href="https://aws.amazon.com/sagemaker/">
-                  Amazon Web Services, SageMaker
-                </a>{" "}
-                as Frontend Engineer.
-              </em>
-            </strong>
-          </p>
+        <div>
         </div>
-        <div className="social-media-icon-home">
-          <span>
-            <a
-              className="mailto fa-ater-name"
-              href="mailto:prachisharma.edu@gmail.com"
-              target="_blank"
-            >
-              <i className="fa fa-envelope" aria-hidden="true"></i>
-            </a>
-          </span>
-          <span>
-            <a
-              className="fa-ater-name "
-              href="https://www.linkedin.com/in/prachi-sharma-b12147133/"
-              target="_blank"
-            >
-              <i className="fa fa-linkedin" aria-hidden="true"></i>
-            </a>
-          </span>
-          <span>
-            <a
-              className="fa-ater-name"
-              href="https://github.com/PrachiSharmaCode"
-              target="_blank"
-            >
-              <i className="fa fa-github"></i>
-            </a>
-          </span>
-          <span>
-            <a
-              className="fa-ater-name"
-              href="https://www.facebook.com/prachi.sharma.122"
-              target="_blank"
-            >
-              <i class="fa fa-facebook" aria-hidden="true"></i>
-            </a>
-          </span>
-          <span>
-            <a
-              className="fa-ater-name"
-              href="https://www.instagram.com/prachieq/"
-              target="_blank"
-            >
-              <i className="fa fa-instagram" aria-hidden="true"></i>
-            </a>
-          </span>
-        </div>
+
       </div>
-    );
-  }
+    </>
+  );
 }
+
+
+
+{/* <span onMouseLeave={() => setToolTip(false)} onMouseEnter={() => setToolTip(true)} className="tooltip-text"> 5 years of experience */}
+                    {/* {toolTip &&
+                      <>
+                        <span className="tooltip-arrow"></span>
+                        <span className="tooltip-container">
+                          <button className="close-tooltip">
+                           x
+                          </button>
+                          I have gained experience from following exteemed companies: <br></br><br></br>
+                          Ford Motors:<br></br> Software Engineer  <br></br><br></br>
+                          Amazon: <br></br> Software Engineer  <br></br><br></br>
+                          Pacific Northwest National University: <br></br> Post Master Research Associate  <br></br><br></br>
+                        </span>
+                      </>
+                    } */}
+                  {/* </span>  */}

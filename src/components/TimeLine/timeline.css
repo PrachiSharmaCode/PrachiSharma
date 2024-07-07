@@ -1,228 +1,293 @@
-.time {
-  margin: 0 0 0 0;
-  position: relative;
-  background-image: linear-gradient(var(--endColor), var(--startColor));
+.timeline-box {
+    background-color: #ffffff;
+    margin-top: 8em;
 }
 
-.timelineHeading {
-  text-align: center;
-  padding-top: 5rem;
-  padding-bottom: 0;
-  padding-right: 2rem;
-  padding-left: 2rem;
-  color: var(--buttonPriColor);
-  font-size: 30px;
-  animation: myfirst 5s 1;
-  width: 100%;
-  margin-bottom: 0;
+.timeline-container {
+    overflow-x: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: transparent #ffffff;
+    scroll-behavior: smooth;
 }
 
-.year {
-  padding: 0;
-  margin: 0 0 0 0;
-  border-bottom: var(--buttonPriColor) solid 5px;
-  color: white;
-  text-align: right;
-  font-size: 20px;
-  font-weight: 100 !important;
-  letter-spacing: 10px;
-  /* width: 50%; */
+.timeline {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+}
+
+.continue-line {
+    width: 15em;
+    margin-top: 25px;
+    border: 2px solid var(--scoll-color);
+    height: 1px;
+}
+
+.timeline-content {
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow-x: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--scroll-color) #ffffff;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+    padding-bottom: 20px;
+    background-color: #fff;
+    background-color: white;
+}
+
+.timeline-text {
+    margin-top: 1.5em;
+    display: flex;
+}
+
+.timeline-content::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+.timeline-content::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+.timeline-content::-webkit-scrollbar-thumb {
+    background-color: var(--scroll-color);
+    border-radius: 3px;
+}
+
+.timeline-content::-webkit-scrollbar-thumb:hover {
+    background-color: #888;
+}
+
+.timeline-event {
+    height: 12px;
+    width: 12px;
+    border: 2px solid black;
+    border-radius: 100%;
+    background-color: black;
+}
+
+.next-line {
+    margin-top: 25px;
+    width: 15em;
+    border: 2px solid var(--scoll-color);
+    height: 1px;
+}
+
+.event-description {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.time-description-container {
+    padding: 6px;
+    background-color: black;
+    border-radius: 10px;
+    border: 1px solid var(--appstartColor);
+    margin: 0 3em 0 3em;
+}
+
+
+.time-description-container p {
+    margin-bottom: 0.5em;
 }
 
 .time-description {
-  padding: 0rem 0rem 0 0rem;
-  margin: 0 0 0 0;
-  color: white;
-  text-align: left;
-  font-size: 18px;
-  letter-spacing: 2px;
-}
-
-.month {
-  padding: 0 0 0 0;
-  margin: 3rem 0 0 0;
-  font-size: 14px;
-  color: black;
-  text-align: left;
-  letter-spacing: 3px;
-}
-
-.location {
-  padding: 0 0 0 0;
-  margin: 0 0 2rem 0;
-  font-size: 14px;
-  color: black;
-  text-align: left;
-  letter-spacing: 3px;
-}
-
-.month-between {
-  padding: 0 0 0 0;
-  margin: 0;
-  font-size: 14px;
-  color: black;
-  text-align: left;
-  letter-spacing: 3px;
-}
-
-.institute-name {
-  font-size: 20px;
-  font-weight: 700;
-  text-decoration: unset;
-  color: white;
-}
-
-.fa-graduation-cap,
-.fa-briefcase {
-  margin-left: 1rem;
-}
-
-.fa-graduation-cap:hover,
-.fa-briefcase:hover {
-  margin-left: 1rem;
-  color: white !important;
-}
-
-.row {
-  padding: 0 !important;
-}
-.col-sm-1,
-.col-sm-2,
-.col-sm-3,
-.col-sm-4,
-.col-sm-5,
-.col-sm-6,
-.col-sm-7,
-.col-sm-8,
-.col-sm-9,
-.col-sm-10,
-.col-sm-11 {
-  padding: 0 !important;
-  margin: 0 !important;
-}
-
-.school-year {
-  top: 10%;
-  left: 0;
-  right: 50%;
-}
-
-.school-name {
-  top: 15%;
-  left: 0;
-  right: 0;
-}
-
-.jecrc-year {
-  top: 20%;
-  left: 50%;
-  right: 0;
-}
-
-.jecrc-name {
-  top: 25%;
-  left: 0;
-  right: 0;
-}
-
-.jks {
-  top: 30%;
-  left: 0;
-  right: 50%;
-}
-
-.jks-description {
-  top: 35%;
-  left: 0;
-  right: 0;
-}
-.jerec-end {
-  top: 40%;
-  left: 50%;
-  right: 0;
-}
-
-.jecrc-end-description {
-  top: 45%;
-  left: 0;
-  right: 0;
-}
-
-.neu-year {
-  top: 50%;
-  left: 0;
-  right: 50%;
-}
-
-.neu-description {
-  top: 55%;
-  left: 0;
-  right: 0;
-}
-
-@media screen and (max-width: 600px) {
-  .year {
-    padding: 0;
-    margin: 0 0 0 0;
-    border-bottom: var(--buttonPriColor) solid 5px;
-    color: white;
-    text-align: right;
-    font-size: 18px;
-    font-weight: 500 !important;
-    letter-spacing: 10px;
-    width: 50%;
-  }
-
-  .time-description {
-    padding: 0rem 0rem 0.5rem 0rem;
-    margin: 0;
-
-    color: white;
-    text-align: center;
+    background-color: white;
+    padding: 3%;
+    color: var(--accentColor);
     font-size: 16px;
-    letter-spacing: 2px;
-    width: 100 !important;
-  }
-  .institute-name {
-    font-size: 18px;
-    font-weight: 900;
-  }
-  .timelineHeading {
-    text-align: center;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    padding-right: 2rem;
-    padding-left: 2rem;
-    color: var(--webAccentColor);
-    font-size: 24px;
-    animation: myfirst 5s 1;
+    border-radius: 10px;
     width: 100%;
-    margin-bottom: 0;
-  }
-  .month {
-    padding: 3rem 0 0 0;
-    margin: 0;
-    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 1px;
+    font-weight: bolder;
+}
+
+.timeline-extra-text {
+    font-size: 12px;
+    text-shadow: 1px 1px 1px rgb(187, 188, 188);
+    letter-spacing: 0;
+    font-weight: 100;
+}
+
+.title-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.under-line {
+    display: flex;
+    flex-direction: row;
+}
+
+.timeline-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 5em 0 10em 0;
+}
+
+.timeline-connection {
+    border-left: 3px solid var(--scoll-color);
+    height: 20px;
+    margin-left: 5px;
+}
+
+.event-icon {
+    font-size: 30px !important;
+    margin-bottom: 2%;
+
+}
+
+.event-date {
+    font-size: 18px;
+    letter-spacing: 1px;
     color: black;
+    font-weight: bolder;
+}
+
+.timeline-button {
+    margin: 0 2em 1em 2em;
+    font-size: 28px;
+    color: var(--accentColor);
+    cursor: pointer;
+    text-shadow: 1px 10px 10px rgb(187, 188, 188);
+}
+
+.timeline-button:hover {
+    margin: 0 2em 0 2em;
+    font-size: 28px;
+    cursor: pointer;
+    text-shadow: 1px 1px 1px rgb(187, 188, 188);
+}
+
+.instruction-text {
+    margin-top: 1em;
+    margin-left: 0.5em;
+    height: 20px;
+    color: black;
+}
+
+.nextButton {
+    margin-left: 5px;
+    animation: goNext 1s infinite;
     text-align: center;
-    letter-spacing: 3px;
+    align-items: center;
+}
+
+@keyframes goNext {
+    0% {
+        /* left: 50; */
+        transform: translateX(5px);
+    }
+
+
+    100% {
+        /* left: 0 */
+        transform: translateX(0);
+    }
+}
+
+.time-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .time-description:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .event-icon {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: var(--scoll-color);
+  }
+  
+  .time-description p {
+    margin: 0;
+    padding: 0;
+    color: #333;
+    font-size: 14px;
+  }
+  
+  .timeline-extra-text {
+    margin-top: 5px;
+    color: #999;
+    font-style: italic;
+    font-size: 12px !important;
   }
 
-  .month-between {
-    padding: 0 0 0 0;
+  .timeline-position{
+    font-size: 14px !important;
+  }
+  
+  .title-description {
+    margin-top: 10px;
+  }
+  
+  .title-description p {
     margin: 0;
-    font-size: 14px;
-    color: black;
-    text-align: center;
-    letter-spacing: 3px;
+    padding: 0;
+    color: #666;
+    font-size: 12px;
   }
+  
+  .title-description p:first-child {
+    font-weight: bold;
+    color: #444;
+  }
+  
 
-  .location {
-    padding: 0 0 0 0;
-    margin: 0 0 1.5rem 0;
-    font-size: 14px;
-    color: black;
-    text-align: center;
-    letter-spacing: 3px;
-  }
+@media (max-width: 500px) {
+    .next-line {
+        width: 13em;
+    }
+
+    .continue-line {
+        width: 13em;
+    }
+
+    .time-description-container {
+        /* margin: 0 0 0 1em; */
+        /* width: 22em; */
+    }
+
+    .time-description-container {
+        padding: 5px;
+        border-radius: 10px;
+        background-color: black;
+        border: 1px solid var(--scoll-color);
+        margin: 0 3em 0 3em;
+    }
+
+    .time-description-container p {
+        margin-bottom: 0.1em;
+    }
+
+    .timeline-content {
+        border-radius: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+
+    .time-description {
+        padding: 2%;
+        font-size: 12px;
+    }
+
 }

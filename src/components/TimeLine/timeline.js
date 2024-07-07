@@ -1,164 +1,92 @@
-import React, { Component } from "react";
+import React, { useRef, useEffect, useState, Component, forwardRef } from "react";
 import "./timeline.css";
 
-export default class timeline extends Component {
-  render() {
-    return (
-      <div>
-        <div className="time" id="timelineLink">
-          <div className="skill-inside">
-            <h1 className="timelineHeading div-heading">TIMELINE</h1>
+const Timeline = forwardRef((props, ref) => {
+// const Timeline = () => {
+  const [start, setStart] = useState(0);
+  const [end, setEnd] = useState(2);
+  const [timeline, setTimeline] = useState([]);
+  const scrollableDivRef = useRef(null);
+  const [nextButtonClicked, setNextButtonClicked] = useState(false);
 
-            <div className="row">
-              <div className="col-sm-1">
-                <h4 className="year">1996</h4>
-              </div>
-              <div className="col-sm-11">
-                <h4 className="month">( JULY )</h4>
-                <h3 className="time-description">
-                  Begin school at <br></br>
-                  <span className="institute-name">
-                    L.K.Shinghania Education Center
-                  </span>
-                </h3>
-                <h4 className="location">(Gotan, Rajastah, India)</h4>
-              </div>
-              <div className="col-sm-2 ">
-                <h4 className="year">2011</h4>
-              </div>
-              <div className="col-sm-10">
-                <h4 className="month">( MAY )</h4>
-                <h3 className="time-description ">
-                  graduated from high school
-                  <i class="fa fa-graduation-cap" aria-hidden="true"></i>
-                  <br></br>
-                  <span className="month-between">( AUGUST )</span>
-                  <br></br>
-                  start persuing Bachloers degree in Informaton Technology from
-                  <br></br>
-                  <span className="institute-name">
-                    Jaipur Engineering College and Research Center
-                  </span>
-                </h3>
-                <h4 className="location">(Jaipur,Rajastah,India)</h4>
-              </div>
-              <div className="col-sm-3">
-                <h4 className="year">2014</h4>
-              </div>
-              <div className="col-sm-9">
-                <h4 className="month">( JUN - AUGUST )</h4>
-                <h3 className="time-description">
-                  internship at <br></br>
-                  <span className="institute-name"> J.K.Technosoft</span>
-                  <i class="fa fa-briefcase" aria-hidden="true"></i>
-                  <br></br>
-                  as Software Developer Intern
-                </h3>
-                <h4 className="location">(Delhi, India)</h4>
-              </div>
-              <div className="col-sm-4">
-                <h4 className="year ">2015</h4>
-              </div>
-              <div className="col-sm-8">
-                <h4 className="month">( MAY )</h4>
-                <h3 className="time-description">
-                  graduated with<br></br>{" "}
-                  <span className="institute-name">Bachloers degree</span> in{" "}
-                  <span className="institute-name">Information Technology</span>
-                  <i class="fa fa-graduation-cap" aria-hidden="true"></i>
-                  <br></br>
-                  from Jaipur Engineering College and Research Center
-                </h3>
-                <h4 className="location">(Jaipir,Rajastah,India)</h4>
-              </div>
-              <div className="col-sm-5">
-                <h4 className="year">2016</h4>
-              </div>
-              <div className="col-sm-7">
-                <h4 className="month">( SEPTEMBER )</h4>
-                <h3 className="time-description">
-                  start persuing Master Degree in Computer Science from{" "}
-                  <br></br>
-                  <span className="institute-name">
-                    Northeastern University
-                  </span>
-                </h3>
-                <h4 className="location">(Seattle,WA,USA)</h4>
-              </div>
-              <div className="col-sm-6">
-                <h4 className="year">2017</h4>
-              </div>
-              <div className="col-sm-6">
-                <h4 className="month">( AUGUST - DECEMBER )</h4>
-                <h3 className="time-description">
-                  worked as<br></br>
-                  <span className="institute-name">
-                    graduate Teaching Assistant{" "}
-                  </span>
-                  <i class="fa fa-briefcase" aria-hidden="true"></i>
-                  <br></br>
-                  at Northeastern University
-                </h3>
-                <h4 className="location">(Seattle,WA,USA)</h4>
-              </div>
-              <div className="col-sm-7">
-                <h4 className="year">2018</h4>
-              </div>
-              <div className="col-sm-5">
-                <h4 className="month">( MAY )</h4>
-                <h3 className="time-description">
-                  graduated with <br></br>{" "}
-                  <span className="institute-name">Master degree</span> in{" "}
-                  <span className="institute-name">Computer Science</span>
-                  <i class="fa fa-graduation-cap" aria-hidden="true"></i>
-                  <br></br>
-                  <span className="month-between">( DECEMBER )</span>
-                  <br></br>
-                  internship at startup <br></br>
-                  <span className="institute-name">MyPeopleNow</span>
-                  <i class="fa fa-briefcase" aria-hidden="true"></i>
-                  <br></br>
-                  as Software Developer Intern
-                </h3>
-                <h4 className="location">(Seattle,WA,USA)</h4>
-              </div>
-              <div className="col-sm-8">
-                <h4 className="year">2019-2020</h4>
-              </div>
-              <div className="col-sm-4">
-                <h4 className="month">( JANUARY - March 2021 )</h4>
-                <h3 className="time-description">
-                  worked at <br></br>
-                  <span className="institute-name">
-                    Pacific Northwest National Laboratory
-                  </span>
-                  <i class="fa fa-briefcase" aria-hidden="true"></i>
-                  <br></br>
-                  as <br></br>
-                  Post Master Research Associate
-                </h3>
-                <h4 className="location">(Richland,WA,USA)</h4>
-              </div>
 
-              <div className="col-sm-9">
-                <h4 className="year">2021-Current</h4>
+  const events = [
+    { id: 1, date: 'Dec 2022', extraText: "start wokring as", company: 'Ford Motors', position: 'Software Engineer', icon: "fa fa-briefcase", location: "Seattle, WA, USA" },
+    { id: 2, date: 'Apr 2021', extraText: "start wokring as", company: 'Amazon', position: 'Frontend Engineer', icon: "fa fa-briefcase", location: "Seattle, WA, USA" },
+    { id: 3, date: 'Jan 2019', extraText: "start wokring as", company: 'Pacific Northwest Nationl Laboratory', position: 'Post Master Research Associate', icon: "fa fa-briefcase", location: "Richland, WA, USA" },
+    { id: 4, date: 'May 2018', extraText: "graduated with", company: 'Northeastern University', position: 'Masters Degree in Computer Science', icon: "fa fa-graduation-cap", location: "Seattle, WA, USA" },
+    { id: 5, date: 'Aug 2017', extraText: "start wokring as", company: 'Northeastern University', position: 'Graduate Teaching Assistant', icon: "fa fa-briefcase", location: "Seattle, WA, USA" },
+    { id: 5, date: 'Sept 2016', extraText: "start persuing", company: 'Northeastern University', position: 'Masters Degree in Computer Science', icon: "fa fa-briefcase", location: "Seattle, WA, USA" },
+    { id: 6, date: 'May 2015', extraText: "graduated with", company: 'Jaipur Engineer College Research Center', position: 'Bachloers degree in Information technology', icon: "fa fa-graduation-cap", location: "Jaipur, Rajasthan, India" },
+    { id: 7, date: 'May 2011', extraText: "graduated from", company: 'L.K.Shinghania Education Center', position: 'High School', icon: "fa fa-graduation-cap", location: "Gotan, Rajasthan, India" },
+
+  ];
+
+  useEffect(() => {
+    const newTimeline = [];
+    for (let i = 0; i < events.length; i++) {
+      if (i < events.length) {
+        newTimeline.push(
+          <div key={events[i].id} className="event-description">
+            <div className="time-description-container">
+              <div className="time-description">
+                <i className={`${events[i].icon} event-icon`} aria-hidden="true"></i>
+                <p>{events[i].company}</p>
+                <p className="timeline-extra-text"><em>{events[i].extraText}</em></p>
+                <div className="title-description">
+                  <p className="timeline-position">{events[i].position}</p>
+                  <p>{events[i].location}</p>
+                </div>
               </div>
-              <div className="col-sm-3">
-                <h4 className="month">( April )</h4>
-                <h3 className="time-description">
-                  working at <br></br>
-                  <span className="institute-name">AWS, SageMaker</span>
-                  <i class="fa fa-briefcase" aria-hidden="true"></i>
-                  <br></br>
-                  as <br></br>
-                  Frontend Engineer
-                </h3>
-                <h4 className="location">(Seattle,WA,USA)</h4>
+            </div>
+            <div className="under-line">
+              <div className="continue-line"></div>
+              <div>
+                <div className="timeline-connection"></div>
+                <div className="timeline-event"></div>
               </div>
+              <div className="next-line"></div>
+            </div>
+            <p className="event-date">{events[i].date}</p>
+          </div>
+        );
+      }
+    }
+    setTimeline(newTimeline);
+  }, [start, end]);
+
+  const scroll = (scrollOffset) => {
+
+    if (!nextButtonClicked) {
+      setNextButtonClicked(true);
+    }
+  };
+
+  return (<>
+    <div ref={ref} className="timeline-box">
+      <div className="div-heading">
+        <p>TIMELINE</p>
+      </div>
+      <div onScroll={scroll} ref={scrollableDivRef} className="timeline-container">
+        <div className="timeline">
+          <div className="timeline-content">
+
+            <div className="instruction-text">
+            <p>Scroll to see more <i class="fa fa-arrow-right nextButton"></i></p>
+              {/* {
+                !nextButtonClicked && <p>Scroll to see more <i class="fa fa-arrow-right nextButton"></i></p>
+              } */}
+            </div>
+            <div className="timeline-text">
+              {timeline}
             </div>
           </div>
         </div>
+        <div className="timeline-buttons">
+        </div>
       </div>
-    );
-  }
-}
+    </div>
+  </>);
+});
+
+export default Timeline;

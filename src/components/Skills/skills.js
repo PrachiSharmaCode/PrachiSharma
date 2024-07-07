@@ -1,46 +1,123 @@
-import React, { Component } from "react";
+import React, { Component, forwardRef } from "react";
 import "./skills.css";
+import jsIcon from "../../images/jsLogo.png";
+import tyIcon from "../../images/tyLogo.png";
+import javaIcon from "../../images/javaLogo.png";
+import reactIcon from "../../images/reactLogo.png";
+import jsxIcon from "../../images/jsxLogo.png";
+import cIcon from "../../images/cplusplusLogo.png";
+import angularLogo from "../../images/angularLogo.png";
+import nodeLogo from "../../images/nodeLogo.png";
+import cypressLogo from "../../images/cypressLogo.png";
+import cucumberLogo from "../../images/cucumberLogo.png";
+import jestLogo from "../../images/jestLogo.png";
+import htmlLogo from "../../images/htmlLogo.png";
+import cssLogo from "../../images/cssLogo.png";
+import scssLogo from "../../images/scssLogo.png";
+import mysqlLogo from "../../images/mysqlLogo.png";
+import mongoLogo from "../../images/mongoLogo.png";
+import hibernateLogo from "../../images/hibernateLogo.png";
+import hadoopLogo from "../../images/hadoopLogo.png";
+import awsLogo from "../../images/awsLogo.png";
+import gitLogo from "../../images/gitLogo.png";
+import sonarqubeLogo from "../../images/sonarQubeLogo.png";
+import graphqlLogo from "../../images/graphQLLogo.png";
+import grafanaLogo from "../../images/grafanaLogo.png";
 
-export default class skills extends Component {
-  render() {
-    return (
-      <div className="skills" id="skillsLink">
-        <div>
-          <h1 className="skillHeading div-heading display-4">SKILLS</h1>
+const Skills = forwardRef((props, ref) => {
+
+
+  const skills = [
+    { logo: jsIcon, name: "JavaScript" },
+    { logo: tyIcon, name: "TypeScript" },
+    { logo: javaIcon, name: "JAVA" },
+    { logo: cIcon, name: "C++" },
+    { logo: jsxIcon, name: "JSX" },
+  ];
+
+  const webSkills = [
+    { logo: reactIcon, name: "React" },
+    { logo: nodeLogo, name: "Node" },
+    { logo: angularLogo, name: "Angular" },
+    { logo: cypressLogo, name: "Cypress" },
+    { logo: jestLogo, name: "Jest" },
+    { logo: cucumberLogo, name: "Cucumber" },
+    { logo: htmlLogo, name: "HTML" },
+    { logo: cssLogo, name: "CSS" },
+    { logo: scssLogo, name: "SCSS" },
+  ];
+
+  const dataSkills = [
+    { logo: mysqlLogo, name: "SQL" },
+    { logo: mongoLogo, name: "MongoDB" },
+    { logo: hibernateLogo, name: "Hibernate" },
+    { logo: hadoopLogo, name: "Hadoop" },
+  ];
+
+  const softwareSkills = [
+    { logo: awsLogo, name: "AWS" },
+    { logo: gitLogo, name: "Git" },
+    { logo: grafanaLogo, name: "Grafana" },
+    { logo: sonarqubeLogo, name: "SonarQube" },
+    { logo: graphqlLogo, name: "GraphQL" },
+  ];
+
+
+   const renderSkillSection = (skills, title) => (
+
+    <div className="skill-container" >
+      {skills.map((skill) => (
+        <div className="skill-details" key={skill.name}>
+          <img className="skill-img" src={skill.logo} alt={skill.name} />
+          <p className="skill-name"><em>{skill.name}</em></p>
         </div>
-        <div className="row">
-          <div className="col-sm shadow col-sm-skills rounded">
-            <ul className="list-group list-group-flush">
-              <li className="list-group-item list-head">Languages</li>
-              <li className="list-group-item">JavaScript</li>
-              <li className="list-group-item">TypeScript</li>
-              <li className="list-group-item">JSX</li>
-              <li className="list-group-item">JAVA</li>
-              <li className="list-group-item">C++</li>
-            </ul>
-          </div>
-          <div className="col-sm col-sm-skills md-5 shadow rounded">
-            <ul className="list-group list-group-flush">
-              <li className="list-group-item list-head">Web Technology</li>
-              <li className="list-group-item">React</li>
-              <li className="list-group-item">Angular</li>
-              <li className="list-group-item">Node</li>
-              <li className="list-group-item">HTML</li>
-              <li className="list-group-item">CSS</li>
-              <li className="list-group-item">SCSS</li>
-            </ul>
-          </div>
-          <div className="col-sm col-sm-skills shadow rounded">
-            <ul className="list-group list-group-flush">
-              <li className="list-group-item list-head">Database</li>
-              <li className="list-group-item">MySQL</li>
-              <li className="list-group-item">MongoDB</li>
-              <li className="list-group-item">Hadoop</li>
-              <li className="list-group-item">Hibernate</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    );
-  }
-}
+      ))}
+    </div>
+
+  );
+
+
+  return (<>
+    <div ref={ref} className="skill-box">
+      <p className="div-heading">SKILLS</p>
+      {renderSkillSection(skills, "Languages")}
+      {renderSkillSection(webSkills, "Web Technology")}
+      {renderSkillSection(dataSkills, "Database")}
+      {renderSkillSection(softwareSkills, "Software")}
+    </div>
+  </>);
+});
+
+export default Skills;
+
+// export default class Skills extends Component {
+
+
+
+
+
+//   renderSkillSection = (skills, title) => (
+
+//     <div className="skill-container" >
+//       {skills.map((skill) => (
+//         <div className="skill-details" key={skill.name}>
+//           <img className="skill-img" src={skill.logo} alt={skill.name} />
+//           <p className="skill-name"><em>{skill.name}</em></p>
+//         </div>
+//       ))}
+//     </div>
+
+//   );
+
+//   render() {
+//     return (
+//       <div className="skill-box">
+//         <p className="div-heading">SKILLS</p>
+//         {this.renderSkillSection(this.skills, "Languages")}
+//         {this.renderSkillSection(this.webSkills, "Web Technology")}
+//         {this.renderSkillSection(this.dataSkills, "Database")}
+//         {this.renderSkillSection(this.softwareSkills, "Software")}
+//       </div>
+//     );
+//   }
+// }

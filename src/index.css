@@ -1,21 +1,33 @@
 @import url("https://fonts.googleapis.com/css?family=Jost&display=swap");
 
+/* @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"); */
+
+
 :root {
-  --webAccentColor: white;
-  /* --buttonPriColor: rgba(140, 108, 48, 0.3); */
-  --buttonPriColor: #f2622e;
+  --buttonPriColor: #fb8b24;
+  /* --scoll-color: #ffb703; */ 
+  --scoll-color: #9381ff;
+  /* --scoll-color: #613dc1; */
 
-  /* --startColor: #ccd9ce;
-  --endColor: #7fada9;
-  --accentColor: #19afbf; */
+  /* c8553d */
+  --nameColor:  #2a9d8f;
 
-  --appstartColor: #171f26;
-  --appendColor: #81878c;
-  --accentColor: #f0f1f2;
+  --testColor: #f4a261;
+  --contactColor: #126782;
+
+  /* --appstartColor: #e5e5e5; */
+  --appstartColor: #edf2f4;
+  /* --appendColor: #cdcdcd; */
+  --appendColor: #e5e6e4;
+  /* --accentColor: #264653; */
+  --accentColor: #000000;
+
+  --navLinkColor:  #264653;
+  --navLinkHover:  #e76f51;
+  
 
   --startColor: transparent;
   --endColor: transparent;
-  --accentColor: #f0f1f2;
 
   --projectbackground: rgba(255, 255, 255, 0.9);
   --projectbackgroundHover: rgb(255, 255, 255);
@@ -23,45 +35,82 @@
 
 html {
   scroll-behavior: smooth;
-  /* overflow-y: scroll; */
 }
 
 @media screen and (max-width: 600px) {
   html {
     scroll-behavior: auto;
-    /* overflow-y: scroll; */
   }
 }
 
 body {
   background-color: transparent;
   font-family: "Jost", sans-serif;
+  /* font-family: 'Great Vibes', cursive; */
 }
 
 ::-webkit-scrollbar {
   width: 10px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
   background-image: linear-gradient(var(--appstartColor), var(--appendColor));
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  /* background: rgba(134, 173, 144, 0.4); */
-  /* background: rgba(225, 225, 0, 0.4); */
-  background-color: var(--buttonPriColor);
+  background-color: var(--scoll-color);
   opacity: 0.4;
 }
 
-/* Handle on hover */
-/* ::-webkit-scrollbar-thumb:hover {
-  background: rgba(225, 225, 0, 0.6);
-} */
-
 .div-heading {
-  color: whitesmoke;
-  letter-spacing: 15px;
-  text-shadow: 2px 2px 4px black;
+  color: var(--scoll-color);
+  letter-spacing: 20px;
+  text-align: center;
+  align-items: center;
+  margin: 0 0 1em 0;
+  font-weight: 900;
+  font-size: 30px;
+}
+
+.btn-primary {
+  background-color: var(--scoll-color) !important;
+  border: 2px solid var(--scoll-color) !important;
+  border-radius: 5px;
+  color: #000000;
+  letter-spacing: 1px;
+  text-align: center;
+  align-items: center;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show>.btn-primary.dropdown-toggle {
+  background-color: white !important;
+}
+
+.btn-primary:hover {
+  background-color: var(--appstartColor) !important;
+  color: var(--accentColor) !important;
+  box-shadow: 0 0 10px #719ECE !important;
+}
+
+.btn-primary:focus {
+  outline: none !important;
+  border: 1px solid var(--accentColor);
+}
+
+
+@media (max-width: 500px){
+  .div-heading{
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 380px){
+  .div-heading{
+    font-size: 24px;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
 }

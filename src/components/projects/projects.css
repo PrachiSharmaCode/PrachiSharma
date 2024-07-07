@@ -1,8 +1,84 @@
-@keyframes ProjectDiv {
-  0% {
-    padding: 1%;
-  }
+.project-box{
+  margin-top: 8em;
 }
+.project-container{
+  background-color: #ffffff;
+  color: #000;
+  text-align: center;
+  padding: 20px;
+  border-radius: 20px; 
+  margin: 20px auto; 
+  width: 90%;
+}
+
+.card-container{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-evenly;
+  flex-wrap: wrap;
+}
+
+.card{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 5px;
+  background-color: #000000;
+  border: 1px solid var(--appstartColor);
+  border-radius: 10px;
+  width: 500px;
+  font-size: 14px;
+  margin: 2em;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover{
+  transform: translateY(-10px);
+  box-shadow: 1px 1px 15px gray;
+}
+
+.project-name{
+  color: var(--scoll-color);
+}
+
+.project-link:hover{
+  transform: scaleX(1.1);
+}
+
+.project-details{
+  background-color: #ffffff;
+  color: #000000;
+  padding: 20px;
+  border-radius: 5px;
+  height: 18em;
+}
+
+.project-tech{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-left: 1em;
+  justify-content: space-around;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: bolder;
+}
+
+.tech-name{
+  margin: 5% 0 0 0;
+  text-align: center;
+  margin: 2% 0 2% 0;
+  letter-spacing: 1px;
+}
+
+.project-link{
+  float: right;
+  color: var(--scoll-color) !important;
+  font-size: 14px;
+  text-decoration: underline;
+}
+
 .project {
   text-align: center;
   margin: 0 0rem 0 0rem;
@@ -17,16 +93,9 @@
 }
 
 .projectHeading {
-  text-align: center;
-  padding-top: 5rem;
-  padding-bottom: 0.5rem;
-  padding-right: 2rem;
-  padding-left: 1rem;
-  font-size: 30px;
-  animation: myfirst 5s 1;
-  width: 100%;
-  margin-bottom: 0;
-  color: var(--buttonPriColor);
+  padding-bottom: 1em;
+  font-size: 36px;
+  color: var(--nameColor);
 }
 
 .col-sm-project {
@@ -35,87 +104,138 @@
   height: 100% !important;
 }
 
-.project-icon {
-  color: white !important;
-  background-color: var(--buttonPriColor) !important;
-  padding: 0 0.5rem 0 0.5rem;
-  box-shadow: 2px 2px 2px black;
-  border-radius: 10%;
+.project-icon{
+  font-size: 18px !important;
+}
+.small-screen-project{
+  display: none;
 }
 
-.project-icon:hover {
-  color: white !important;
-  background-color: var(--buttonPriColor) !important;
-  box-shadow: 1px 1px 1px black;
-}
-.card {
-  margin: 2rem;
-  border: var(--webAccentColor) 1px solid;
-  background-color: var(--projectbackground);
-  color: black;
-  height: 100%;
+.accordian-container{
+  text-align: center;
+  align-items: center;
 }
 
-.card-text {
+.accordion{
+  text-align: left;
+  align-items: center;
+}
+
+.accordion-button{
+  background-color: transparent;
+  border: none;
+  color: var(--scoll-color);
+  width: 100%;
   text-align: left;
 }
 
-.card:hover {
-  background-color: var(--projectbackgroundHover);
+.collapsing{
+  text-align: center;
+  align-items: center;
 }
 
-.card-header {
-  border-bottom: 1px solid var(--buttonPriColor);
+.collapse.show{
+  text-align: center;
+  align-items: center;
+}
+
+.accordion-header{
+  width: 20em;
+  font-size: 18px;
+  padding: 1em;
   background-color: white;
-  color: black;
-  font-size: 20px !important;
-  font-weight: 900;
-  letter-spacing: 2px;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.card-footer {
-  border-top: var(--webAccentColor) 1px solid;
-  background-color: white;
-  font-weight: 900;
-  border-top: 1px solid var(--buttonPriColor);
+.accordion-body{
+  display: flex;
+  flex-direction: column;
+  padding: 1.5em;
 }
 
-.btn-primary {
-  background-color: var(--buttonPriColor) !important;
-  border-color: var(--buttonPriColor) !important;
-  color: white !important;
-  letter-spacing: 2px;
+.accordion-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.btn-primary:not(:disabled):not(.disabled).active,
-.btn-primary:not(:disabled):not(.disabled):active,
-.show > .btn-primary.dropdown-toggle {
-  background-color: white !important;
+.project-arrow {
+  position: absolute;
+  right: 3.3em;
 }
 
-.btn-primary:hover {
-  background-color: var(--appstartColor) !important;
-}
 
-@media screen and (max-width: 600px) {
-  .card {
-    margin: 2rem;
-    border: var(--webAccentColor) 1px solid;
-    background-color: var(--projectbackground);
-    color: black;
-    height: 100%;
+@media (max-width: 1050px){
+
+  .project-container{
+    margin-top: 8em;
+    padding: 5px;
+    width: 100%; 
   }
 
-  .projectHeading {
-    text-align: center;
-    padding-top: 5rem;
-    padding-bottom: 1rem;
-    padding-right: 2rem;
-    padding-left: 2rem;
-    color: var(--webAccentColor);
-    font-size: 24px;
-    animation: myfirst 5s 1;
-    width: 100%;
-    margin-bottom: 0;
+  .card{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 5px;
+    width: 300px;
+  }
+
+  .project-details{
+    padding: 20px;
+    height: 30em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .project-link{
+    position: relative;
+  }
+  
+}
+
+
+@media (max-width: 600px){
+
+  .card-container{
+    display: none;
+  }
+
+  .small-screen-project{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .project-link{
+    margin-top: 0.5em;
+  }
+}
+
+@media (max-width: 380px){
+  .card-container{
+    display: none;
+  }
+
+  .small-screen-project{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .accordion-header{
+    width: 18em;
+    font-size: 16px;
+    padding: 1em;
+  }
+
+  .project-link{
+    margin-top: 0.5em;
   }
 }
