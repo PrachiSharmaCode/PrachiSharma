@@ -5,12 +5,12 @@
 
 :root {
   --buttonPriColor: #fb8b24;
-  /* --scoll-color: #ffb703; */ 
+  /* --scoll-color: #ffb703; */
   --scoll-color: #9381ff;
   /* --scoll-color: #613dc1; */
 
   /* c8553d */
-  --nameColor:  #2a9d8f;
+  --nameColor: #2a9d8f;
 
   --testColor: #f4a261;
   --contactColor: #126782;
@@ -22,12 +22,12 @@
   /* --accentColor: #264653; */
   --accentColor: #000000;
 
-  --navLinkColor:  #264653;
-  --navLinkHover:  #e76f51;
+  --navLinkColor: #264653;
+  --navLinkHover: #e76f51;
 
   --background-color: #ffffff;
   --text-color: #000000;
-  
+
 
   --startColor: transparent;
   --endColor: transparent;
@@ -48,8 +48,8 @@ html {
 
 body {
   font-family: "Jost", sans-serif;
-  background-color: var(--background-color);
-  color: var(--text-color);
+  background-color: white;
+  color: black
 }
 
 
@@ -105,14 +105,14 @@ body {
 }
 
 
-@media (max-width: 500px){
-  .div-heading{
+@media (max-width: 500px) {
+  .div-heading {
     font-size: 28px;
   }
 }
 
-@media (max-width: 380px){
-  .div-heading{
+@media (max-width: 380px) {
+  .div-heading {
     font-size: 24px;
     margin-left: 1em;
     margin-right: 1em;
@@ -121,17 +121,7 @@ body {
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background-color: #ffffff !important;
-    --text-color: #000000 !important;
-  }
-
-  .btn-primary {
-    background-color: var(--scoll-color) !important;
-    border: 2px solid var(--scoll-color) !important;
-    border-radius: 5px;
-    color: #000000;
-    letter-spacing: 1px;
-    text-align: center;
-    align-items: center;
+    background-color: white;
+    color: black;
   }
 }
