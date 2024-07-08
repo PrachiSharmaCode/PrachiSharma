@@ -1,4 +1,4 @@
-import React, { Component, useRef } from "react";
+import React, { Component, useRef, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "font-awesome/css/font-awesome.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -12,6 +12,11 @@ import Timeline from "./components/TimeLine/timeline";
 import Contact from "./components/contact/contact";
 
 export default function App() {
+
+  useEffect(() => {
+    document.body.style.backgroundColor = '#ffffff';
+    document.body.style.color = '#000000';
+}, []);
 
   const skillRef = useRef(null);
   const projectRef = useRef(null);
