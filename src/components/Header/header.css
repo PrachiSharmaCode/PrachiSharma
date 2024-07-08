@@ -68,6 +68,10 @@
   text-align: center;
 }
 
+.resume-button{
+  background-color: var(--scoll-color);
+}
+
 @media (prefers-color-scheme: dark) {
   .resume-button{
     background-color: var(--scoll-color);
