@@ -14,6 +14,7 @@ import Contact from "./components/contact/contact";
 export default function App() {
 
   useEffect(() => {
+    document.body.classList.remove("dark-mode");
     document.body.style.backgroundColor = '#ffffff';
     document.body.style.color = '#000000';
 }, []);
