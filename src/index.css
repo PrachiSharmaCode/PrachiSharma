@@ -1,37 +1,20 @@
-@import url("https://fonts.googleapis.com/css?family=Jost&display=swap");
-
-/* @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"); */
-
+/* @import url("https://fonts.googleapis.com/css?family=Jost&display=swap");
 
 :root {
   --buttonPriColor: #fb8b24;
-  /* --scoll-color: #ffb703; */
   --scoll-color: #9381ff;
-  /* --scoll-color: #613dc1; */
-
-  /* c8553d */
   --nameColor: #2a9d8f;
-
   --testColor: #f4a261;
   --contactColor: #126782;
-
-  /* --appstartColor: #e5e5e5; */
   --appstartColor: #edf2f4;
-  /* --appendColor: #cdcdcd; */
   --appendColor: #e5e6e4;
-  /* --accentColor: #264653; */
   --accentColor: #000000;
-
   --navLinkColor: #264653;
   --navLinkHover: #e76f51;
-
   --background-color: #ffffff;
   --text-color: #000000;
-
-
   --startColor: transparent;
   --endColor: transparent;
-
   --projectbackground: rgba(255, 255, 255, 0.9);
   --projectbackgroundHover: rgb(255, 255, 255);
 }
@@ -61,7 +44,6 @@ body {
   background-image: linear-gradient(var(--appstartColor), var(--appendColor));
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background-color: var(--scoll-color);
   opacity: 0.4;
@@ -123,5 +105,129 @@ body {
   :root {
     background-color: white;
     color: black;
+  }
+} */
+
+@import url("https://fonts.googleapis.com/css?family=Jost&display=swap");
+
+/* @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"); */
+
+:root {
+  --buttonPriColor: #fb8b24;
+  /* --scoll-color: #ffb703; */
+  --scoll-color: #9381ff;
+  /* --scoll-color: #613dc1; */
+
+  /* c8553d */
+  --nameColor: #2a9d8f;
+
+  --testColor: #f4a261;
+  --contactColor: #126782;
+
+  /* --appstartColor: #e5e5e5; */
+  --appstartColor: #edf2f4;
+  /* --appendColor: #cdcdcd; */
+  --appendColor: #e5e6e4;
+  /* --accentColor: #264653; */
+  --accentColor: #000000;
+
+  --navLinkColor: #264653;
+  --navLinkHover: #e76f51;
+
+  --background-color: #ffffff;
+  --text-color: #000000;
+
+  --startColor: transparent;
+  --endColor: transparent;
+
+  --projectbackground: rgba(255, 255, 255, 0.9);
+  --projectbackgroundHover: rgb(255, 255, 255);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  font-family: "Jost", sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-image: linear-gradient(var(--appstartColor), var(--appendColor));
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: var(--scoll-color);
+  opacity: 0.4;
+}
+
+.div-heading {
+  color: var(--scoll-color);
+  letter-spacing: 20px;
+  text-align: center;
+  align-items: center;
+  margin: 0 0 1em 0;
+  font-weight: 900;
+  font-size: 30px;
+}
+
+.btn-primary {
+  background-color: var(--scoll-color) !important;
+  border: 2px solid var(--scoll-color) !important;
+  border-radius: 5px;
+  color: #000000;
+  letter-spacing: 1px;
+  text-align: center;
+  align-items: center;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show>.btn-primary.dropdown-toggle {
+  background-color: white !important;
+}
+
+.btn-primary:hover {
+  background-color: var(--appstartColor) !important;
+  color: var(--accentColor) !important;
+  box-shadow: 0 0 10px #719ECE !important;
+}
+
+.btn-primary:focus {
+  outline: none !important;
+  border: 1px solid var(--accentColor);
+}
+
+@media (max-width: 500px) {
+  .div-heading {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 380px) {
+  .div-heading {
+    font-size: 24px;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: white !important;
+    color: black !important;
   }
 }
