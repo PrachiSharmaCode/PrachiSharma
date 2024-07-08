@@ -24,6 +24,9 @@
 
   --navLinkColor:  #264653;
   --navLinkHover:  #e76f51;
+
+  --background-color: #ffffff;
+  --text-color: #000000;
   
 
   --startColor: transparent;
@@ -44,12 +47,10 @@ html {
 }
 
 body {
-  /* background-color: transparent; */
   font-family: "Jost", sans-serif;
   background-color: var(--background-color);
   color: var(--text-color);
 }
-  /* font-family: 'Great Vibes', cursive; */
 
 
 ::-webkit-scrollbar {
@@ -115,5 +116,22 @@ body {
     font-size: 24px;
     margin-left: 1em;
     margin-right: 1em;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #ffffff !important;
+    --text-color: #000000 !important;
+  }
+
+  .btn-primary {
+    background-color: var(--scoll-color) !important;
+    border: 2px solid var(--scoll-color) !important;
+    border-radius: 5px;
+    color: #000000;
+    letter-spacing: 1px;
+    text-align: center;
+    align-items: center;
   }
 }

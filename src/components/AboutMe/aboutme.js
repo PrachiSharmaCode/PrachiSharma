@@ -24,11 +24,6 @@ export default function Aboutme() {
     };
   }, []);
 
-  let closeTip = () => {
-    console.log("inside");
-    setToolTip(false);
-  }
-
   return (
     <>
       <div className="main">

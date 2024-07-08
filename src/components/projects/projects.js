@@ -10,7 +10,7 @@ const Projects = forwardRef((props, ref) => {
     setActiveKey(activeKey === key ? null : key);
   };
 
-    const projectData = [
+  const projectData = [
     {
       projectsName: "Lion International School Records",
       projectDescription: "This application empowers school faculty to efficiently manage business operations, track accounts, and organize student records. As the frontend developer, I had the incredible opportunity to build and design a comprehensive management application using React.js. From crafting intuitive user interfaces to ensuring seamless functionality, every aspect of the frontend was meticulously tailored to meet the school's needs.",
@@ -92,12 +92,15 @@ const Projects = forwardRef((props, ref) => {
                       {project.gitHubLink !== "" && (
                         <a
                           target="_blank"
-                          className="project-link"
+                          className="accordian-project-link"
                           href={project.gitHubLink}
                         >
                           Github <i className="fa fa-github project-icon"></i>
                         </a>
                       )}
+                      <div className="accordian-project-tech">
+                        {project.projectTech.join(", ")}
+                      </div>
                     </Accordion.Body>
                   </Accordion.Item>
                 </Accordion>

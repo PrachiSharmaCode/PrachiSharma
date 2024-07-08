@@ -29,7 +29,6 @@ export default function Header({ scrollToSection }){
           <Nav.Link onClick={() => { scrollToSection('skills'); handleSelect(); }}>SKILLS</Nav.Link>
           <Nav.Link onClick={() => {scrollToSection('timeline'); handleSelect(); }}>TIMELINE</Nav.Link>
           <Nav.Link href="#contact">CONTACT</Nav.Link>
-          {/* <Nav.Link href={resume} target="_blank">Resume</Nav.Link> */}
         </Nav>
       </Navbar.Collapse>
       <div className="social-icon">
