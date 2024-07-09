@@ -19,7 +19,7 @@ const Projects = forwardRef((props, ref) => {
     },
     {
       projectsName: "Allot",
-      projectDescription: "Developed an android application to assign tasks and to keeptrack of work among collogues, mates etc. Implemented functionalities like Geofencing, Hamburger menu, Floating Action Buttons and Notifications.",
+      projectDescription: "Developed an android application to assign tasks and to keep track of work among collogues, mates etc. Implemented functionalities like Geofencing, Hamburger menu, Floating Action Buttons and Notifications.",
       projectTech: ["JavaScript", "Typesacript", "React"],
       gitHubLink: "https://github.com/PrachiSharmaCode/ALLOT",
     },
@@ -31,7 +31,7 @@ const Projects = forwardRef((props, ref) => {
     },
     {
       projectsName: "The Food Truck Web",
-      projectDescription: "I led the development of an innovative website revolutionizing the food truck industry. Users can effortlessly search for food trucks using criteria like name, city, address, and pin code. The integration of Google Maps enhances the experience by providing real-time location tracking. This platform simplifies locating favorite food trucks, offering convenience on the go.",
+      projectDescription: "I led the development of an innovative website revolutionizing the food truck industry. Users can effortlessly search for food trucks using criteria like name, city, address, and pin code. The integration of Google Maps enhances the experience by providing location tracking. This platform simplifies locating favorite food trucks, offering convenience on the go.",
       projectTech: ["JavaScript", "Angular", "Node", "Google Map API"],
       gitHubLink: "https://github.com/PrachiSharmaCode/WebDevelopment/tree/master/project",
     },
