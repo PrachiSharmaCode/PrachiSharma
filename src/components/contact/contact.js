@@ -26,7 +26,7 @@ export default class Contact extends Component {
             <i className="fa fa-github icon-contact"></i>
           </a>
 
-          <a href="https://www.facebook.com/prachi.sharma.122" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.facebook.com/prachi.sharma.122/" target="_blank" rel="noopener noreferrer">
             <i className="fa fa-facebook icon-contact" aria-hidden="true"></i>
           </a>
 

@@ -32,7 +32,7 @@ export default function Header({ scrollToSection }){
         </Nav>
       </Navbar.Collapse>
       <div className="social-icon">
-        <a
+        {/* <a
           className="mailto fa-ater-name"
           href="mailto:prachisharma.edu@gmail.com"
           target="_blank"
@@ -50,12 +50,12 @@ export default function Header({ scrollToSection }){
         <a href="https://github.com/PrachiSharmaCode" target="_blank" rel="noopener noreferrer">
           <i className="fa fa-github about-page-icon"></i>
         </a>
-        <a href="https://www.facebook.com/prachi.sharma.122" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.facebook.com/prachi.sharma.122/" target="_blank" rel="noopener noreferrer">
           <i className="fa fa-facebook about-page-icon" aria-hidden="true"></i>
         </a>
         <a href="https://www.instagram.com/prachieq/" target="_blank" rel="noopener noreferrer">
           <i className="fa fa-instagram about-page-icon" aria-hidden="true"></i>
-        </a>
+        </a> */}
         <Button href={resume} target="_blank" className="resume-button">
           Resume
         </Button>
