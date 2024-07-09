@@ -66,7 +66,7 @@ export default function Aboutme() {
           </div> */}
           <div className="opportunity-div">
             <p>
-              <em>Take a journey through my portfolio to explore my projects, skills, and experiences. <br></br> If you have an opportunity that aligns with my expertise, I would love to connect and explore the possibilities.</em>
+              Take a journey through my portfolio to explore my projects, skills, and experiences. <br></br> If you have an opportunity that aligns with my expertise, I would love to connect and explore the possibilities.
             </p>
           </div>
           {

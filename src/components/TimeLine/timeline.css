@@ -110,9 +110,8 @@
 
 .timeline-extra-text {
     font-size: 12px;
-    text-shadow: 1px 1px 1px rgb(187, 188, 188);
     letter-spacing: 0;
-    font-weight: 100;
+    font-weight: 300;
 }
 
 .title-description {
@@ -254,11 +253,11 @@
 
 @media (max-width: 500px) {
     .next-line {
-        width: 13em;
+        width: 15em;
     }
 
     .continue-line {
-        width: 13em;
+        width: 15em;
     }
 
     .time-description-container {

@@ -1,5 +1,5 @@
 .navbar-brand {
-  color: #ffc107 !important;
+  /* color: #ffc107 !important; */
   font-size: 1.5vw;
 }
 
@@ -12,17 +12,17 @@
 }
 
 .navbar-toggler-icon {
-  background-color: var(--appstartColor);
+  background-color: #000;
 }
 
 .navbar {
-  background-color: #000000 !important;
+  background-color: var(--scoll-color) !important;
   margin: 0 0rem 0rem 0rem;
   text-align:  center;
   align-items: center;
   padding: 1.5em;
-  border-top: 2px solid var(--scoll-color);
-  border-bottom: 3px solid var(--scoll-color);
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; */
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .greeting {
@@ -48,6 +48,7 @@
 
 .about-page-icon:hover {
   transform: scale(0.9); 
+  color: #000;
 }
 
 .nav-brand-image {
@@ -55,12 +56,13 @@
 }
 
 .nav-link {
-  font-weight: 800 !important;
+  font-weight: bolder !important;
   letter-spacing: 5px;
-  color: var(--appendColor) !important;
+  color: #fff !important;
 }
+
 .nav-link:hover {
-  color: var(--scoll-color) !important;
+  color: #000 !important;
   font-weight: 900 !important;
 }
 
@@ -69,13 +71,7 @@
 }
 
 .resume-button{
-  background-color: var(--scoll-color);
-}
-
-@media (prefers-color-scheme: dark) {
-  .resume-button{
-    background-color: var(--scoll-color);
-  }
+  background-color: black;
 }
 
 @media (max-width: 768px) {
@@ -124,7 +120,7 @@
   display: block;
   width: 24px;
   height: 3px;
-  background-color: #9381ff; /* Custom color for the lines */
+  background-color: transparent; /* Custom color for the lines */
   position: absolute;
   left: 0;
   transition: all 0.2s;

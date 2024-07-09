@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css?family=Jost&display=swap");
+/* @import url("https://fonts.googleapis.com/css?family=Jost&display=swap"); */
 
-/* @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"); */
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Inconsolata:wght@200..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 :root {
   --buttonPriColor: #fb8b24;
@@ -45,7 +45,8 @@ html {
 }
 
 body {
-  font-family: "Jost", sans-serif;
+  /* font-family: "Mulish", sans-serif; */
+  font-family: "Inconsolata", monospace;
   background-color: var(--background-color);
   color: var(--text-color);
 }
@@ -70,15 +71,15 @@ body {
   text-align: center;
   align-items: center;
   margin: 0 0 1em 0;
-  font-weight: 900;
+  font-weight: normal;
   font-size: 30px;
 }
 
 .btn-primary {
-  background-color: var(--scoll-color) !important;
-  border: 2px solid var(--scoll-color) !important;
+  background-color: #000 !important;
+  border: 2px solid #000 !important;
   border-radius: 5px;
-  color: #000000;
+  color: #fff;
   letter-spacing: 1px;
   text-align: center;
   align-items: center;

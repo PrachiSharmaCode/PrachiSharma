@@ -13,13 +13,13 @@ const Projects = forwardRef((props, ref) => {
   const projectData = [
     {
       projectsName: "Lion International School Records",
-      projectDescription: "This application empowers school faculty to efficiently manage business operations, track accounts, and organize student records. As the frontend developer, I had the incredible opportunity to build and design a comprehensive management application using React.js. From crafting intuitive user interfaces to ensuring seamless functionality, every aspect of the frontend was meticulously tailored to meet the school's needs.",
+      projectDescription: "This application empowers school faculty to efficiently manage business operations, track accounts, and organize student records. I had the incredible opportunity to build and design a comprehensive management application using React.js. From crafting intuitive user interfaces to ensuring seamless functionality, every aspect of the frontend was meticulously tailored to meet the school's needs.",
       projectTech: ["JavaScript", "React"],
       gitHubLink: "https://github.com/PrachiSharmaCode/LionsInternationalSchoolRecords/tree/main",
     },
     {
       projectsName: "Allot",
-      projectDescription: "I led the development of an innovative website revolutionizing the food truck industry. Users can effortlessly search for food trucks using criteria like name, city, address, and pin code. The integration of Google Maps enhances the experience by providing real-time location tracking. This platform simplifies locating favorite food trucks, offering convenience on the go.",
+      projectDescription: "Developed an android application to assign tasks and to keeptrack of work among collogues, mates etc. Implemented functionalities like Geofencing, Hamburger menu, Floating Action Buttons and Notifications.",
       projectTech: ["JavaScript", "Typesacript", "React"],
       gitHubLink: "https://github.com/PrachiSharmaCode/ALLOT",
     },
@@ -99,7 +99,7 @@ const Projects = forwardRef((props, ref) => {
                         </a>
                       )}
                       <div className="accordian-project-tech">
-                        {project.projectTech.join(", ")}
+                       {project.projectTech.join(", ")}
                       </div>
                     </Accordion.Body>
                   </Accordion.Item>

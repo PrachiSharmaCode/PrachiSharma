@@ -69,7 +69,7 @@ const Skills = forwardRef((props, ref) => {
       {skills.map((skill) => (
         <div className="skill-details" key={skill.name}>
           <img className="skill-img" src={skill.logo} alt={skill.name} />
-          <p className="skill-name"><em>{skill.name}</em></p>
+          <p className="skill-name">{skill.name}</p>
         </div>
       ))}
     </div>
