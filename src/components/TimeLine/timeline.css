@@ -264,7 +264,6 @@
         padding: 5px;
         border-radius: 10px;
         background-color: black;
-        border: 1px solid var(--scoll-color);
         margin: 0 1em 0 1em;
     }
 
@@ -280,7 +279,7 @@
 
 
     .time-description {
-        padding: 8%;
+        padding: 2%;
         font-size: 12px;
     }
 
