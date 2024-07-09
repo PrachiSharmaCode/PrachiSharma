@@ -115,9 +115,9 @@ body {
   }
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   body {
     background-color: white !important;
     color: black !important;
   }
-}
+} */
