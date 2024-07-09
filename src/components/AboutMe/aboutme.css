@@ -49,7 +49,7 @@
   display: flex;
   justify-content: center;
   font-size: 18px;
-  text-align: center;
+  text-align: justify;
   font-weight: 500;
   color: darkgray;
 }
@@ -57,12 +57,14 @@
 .lead {
   display: flex;
   justify-content: center;
-  padding: 0;
-  color: darkgray;
-  text-align: center;
+  /* padding: 0; */
+  color: #6c757d;
+  text-align: justify;
   align-items: center;
   font-size: 18px;
   font-weight: 500;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .head-name {
@@ -87,7 +89,7 @@
   flex-direction: row;
   margin-left: 10em;
   margin-right: 10em;
-  text-align: center;
+  text-align: justify;
   align-items: center;
 }
 
@@ -195,7 +197,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #000;
+  /* background-color: #000; */
   padding-bottom: 2em;
 }
 
@@ -205,8 +207,9 @@
   object-fit: cover;
   margin: 0 1em 1.5em 0;
   border-radius: 5%;
-  border: 2px solid var(--scoll-color);
-  padding: 8px;
+  outline: 4px solid white;
+  outline-offset: -12px;
+  box-sizing: border-box;
 }
 
 
@@ -330,7 +333,6 @@
 
 @media (max-width: 600px) {
   .main {
-    background-color: #000;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -422,7 +424,6 @@
 
   .main {
     padding-bottom: 2em;
-    background-color: #000;
     height: 120vh;
   }
 
@@ -471,9 +472,8 @@
 @media (max-width: 380px) {
 
   .main {
-    background-color: #000;
     display: flex;
-    justify-content: center;
+    justify-content: justify;
     align-items: center;
     flex-direction: column;
     padding-bottom: 2em;
