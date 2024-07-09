@@ -4,15 +4,15 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: #000;
+  background-color: var(--scoll-color);
   padding: 4em 1em;
   letter-spacing: 1px;
-  border-top: 10px double var(--scoll-color);
-  /* border-bottom: 5px solid var(--scoll-color); */
+  outline: 3px solid white;
+  outline-offset: -15px;
 }
 
 .contact-heading {
-  color: var(--scoll-color);
+  color: #fff;
   margin: 2% 1% 0 1%;
   font-size: 2.5em;
   font-weight: bold;
@@ -31,7 +31,7 @@
 }
 
 .contact-mail-address {
-  color: var(--scoll-color);
+  color: #fff;
   font-size: 18px;
   display: flex;
   align-items: center;
@@ -46,7 +46,7 @@
 }
 
 .contact-mail-address:hover {
-  color: #fff;
+  color: #000;
   transform: scale(0.95); 
   cursor: pointer;
 }
@@ -67,7 +67,7 @@
 }
 
 .icon-contact:hover {
-  color: var(--scoll-color);
+  color: #000;
   transform: scale(0.9); 
   cursor: pointer;
 }

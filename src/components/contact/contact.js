@@ -42,7 +42,7 @@ export default class Contact extends Component {
             rel="noopener noreferrer"
           >
             <i className="fa fa-envelope" aria-hidden="true"></i>
-            <em>prachisharma.edu@gmail.com</em>
+            prachisharma.edu@gmail.com
           </a>
         </div>
       </div>

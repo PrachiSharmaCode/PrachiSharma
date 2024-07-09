@@ -52,34 +52,13 @@ export default function Aboutme() {
 
 
             
-              Take a journey through my portfolio to explore my projects, skills, and experiences. <br></br> If you have an opportunity that aligns with my expertise, I would love to connect and explore the possibilities.
+              Take a journey through my portfolio to explore my projects, skills, and experiences. If you have an opportunity that aligns with my expertise, I would love to connect and explore the possibilities.
             
                 
               </p>
 
             </div>
-            {/* <div className="opportunity-div">
-            <p>
-              Take a journey through my portfolio to explore my projects, skills, and experiences. <br></br> If you have an opportunity that aligns with my expertise, I would love to connect and explore the possibilities.
-            </p>
-          </div> */}
           </div>
-          {/* <div className="subContainer-flex">
-            <div className="lead">
-              <p>
-                <em>
-                  I am a software developer based in vibrant city of Seattle. <br></br> With a background encompassing 5 years of experience in the industry
-                  and a Master's degree in Computer Science from <a className="about-link" target="1" href="https://seattle.northeastern.edu/">Northeastern University</a>
-                </em>
-              </p>
-
-            </div>
-          </div> */}
-          {/* <div className="opportunity-div">
-            <p>
-              Take a journey through my portfolio to explore my projects, skills, and experiences. <br></br> If you have an opportunity that aligns with my expertise, I would love to connect and explore the possibilities.
-            </p>
-          </div> */}
           {
             !isScrolled && <div className="scroll-down-div">
               <div className="scroll-down-container">

@@ -197,7 +197,6 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  /* background-color: #000; */
   padding-bottom: 2em;
 }
 
@@ -417,6 +416,8 @@
     width: 150px;
     height: auto;
     margin-bottom: 2em;
+    outline: 2px solid white;
+    outline-offset: -8px;
   }
 }
 
@@ -466,6 +467,8 @@
     width: 150px;
     height: auto;
     margin-bottom: 2em;
+    outline: 2px solid white;
+    outline-offset: -8px;
   }
 }
 
@@ -519,6 +522,8 @@
     width: 150px;
     height: auto;
     margin-bottom: 2em;
+    outline: 2px solid white;
+    outline-offset: -8px;
   }
 }
 
