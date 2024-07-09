@@ -43,12 +43,12 @@ export default function Aboutme() {
           <div className="subContainer-flex">
             <div className="lead">
               <p>
-                <em>
+                
                   I am a software developer based in vibrant city of Seattle. <br></br><br></br> With a background encompassing 5 years of experience in the industry
                   and a Master's degree in Computer Science from <a className="about-link" target="1" href="https://seattle.northeastern.edu/">Northeastern University <FontAwesomeIcon className="external-link-icon" icon={faArrowUpRightFromSquare} /></a>, I specialize in transforming innovative ideas into interactive digital solutions.<br></br>
 
                   My expertise lies in frontend development, complemented by a strong understanding of backend technologies.
-                </em>
+                
               </p>
 
             </div>

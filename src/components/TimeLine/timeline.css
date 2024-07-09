@@ -262,11 +262,6 @@
     }
 
     .time-description-container {
-        /* margin: 0 0 0 1em; */
-        /* width: 22em; */
-    }
-
-    .time-description-container {
         padding: 5px;
         border-radius: 10px;
         background-color: black;

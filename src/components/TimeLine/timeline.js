@@ -11,11 +11,11 @@ const Timeline = forwardRef((props, ref) => {
 
 
   const events = [
-    { id: 1, date: 'Dec 2022', extraText: "start wokring as", company: 'Ford Motors', position: 'Software Engineer', icon: "fa fa-briefcase", location: "Seattle, WA, USA" },
-    { id: 2, date: 'Apr 2021', extraText: "start wokring as", company: 'Amazon', position: 'Frontend Engineer', icon: "fa fa-briefcase", location: "Seattle, WA, USA" },
-    { id: 3, date: 'Jan 2019', extraText: "start wokring as", company: 'Pacific Northwest Nationl Laboratory', position: 'Post Master Research Associate', icon: "fa fa-briefcase", location: "Richland, WA, USA" },
+    { id: 1, date: 'Dec 2022', extraText: "Started working as", company: 'Ford Motors', position: 'Software Engineer', icon: "fa fa-briefcase", location: "Seattle, WA, USA" },
+    { id: 2, date: 'Apr 2021', extraText: "Started working as", company: 'Amazon', position: 'Frontend Engineer', icon: "fa fa-briefcase", location: "Seattle, WA, USA" },
+    { id: 3, date: 'Jan 2019', extraText: "Started working as", company: 'Pacific Northwest Nationl Laboratory', position: 'Post Master Research Associate', icon: "fa fa-briefcase", location: "Richland, WA, USA" },
     { id: 4, date: 'May 2018', extraText: "graduated with", company: 'Northeastern University', position: 'Masters Degree in Computer Science', icon: "fa fa-graduation-cap", location: "Seattle, WA, USA" },
-    { id: 5, date: 'Aug 2017', extraText: "start wokring as", company: 'Northeastern University', position: 'Graduate Teaching Assistant', icon: "fa fa-briefcase", location: "Seattle, WA, USA" },
+    { id: 5, date: 'Aug 2017', extraText: "Started working as", company: 'Northeastern University', position: 'Graduate Teaching Assistant', icon: "fa fa-briefcase", location: "Seattle, WA, USA" },
     { id: 5, date: 'Sept 2016', extraText: "start persuing", company: 'Northeastern University', position: 'Masters Degree in Computer Science', icon: "fa fa-briefcase", location: "Seattle, WA, USA" },
     { id: 6, date: 'May 2015', extraText: "graduated with", company: 'Jaipur Engineer College Research Center', position: 'Bachloers degree in Information technology', icon: "fa fa-graduation-cap", location: "Jaipur, Rajasthan, India" },
     { id: 7, date: 'May 2011', extraText: "graduated from", company: 'L.K.Shinghania Education Center', position: 'High School', icon: "fa fa-graduation-cap", location: "Gotan, Rajasthan, India" },
