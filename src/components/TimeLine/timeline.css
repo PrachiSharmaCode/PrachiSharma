@@ -253,11 +253,11 @@
 
 @media (max-width: 500px) {
     .next-line {
-        width: 15em;
+        width: 12em;
     }
 
     .continue-line {
-        width: 15em;
+        width: 12em;
     }
 
     .time-description-container {
@@ -265,7 +265,7 @@
         border-radius: 10px;
         background-color: black;
         border: 1px solid var(--scoll-color);
-        margin: 0 3em 0 3em;
+        margin: 0 1em 0 1em;
     }
 
     .time-description-container p {
@@ -280,7 +280,7 @@
 
 
     .time-description {
-        padding: 2%;
+        padding: 8%;
         font-size: 12px;
     }
 
