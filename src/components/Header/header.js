@@ -24,8 +24,8 @@ export default function Header({ scrollToSection }){
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="me-auto">
           <Nav.Link href="#about">ABOUT</Nav.Link>
-          <Nav.Link onClick={() => {scrollToSection('projects'); handleSelect(); }}>PROJECTS</Nav.Link>
           <Nav.Link onClick={() => { scrollToSection('skills'); handleSelect(); }}>SKILLS</Nav.Link>
+          <Nav.Link onClick={() => {scrollToSection('projects'); handleSelect(); }}>PROJECTS</Nav.Link>
           <Nav.Link onClick={() => {scrollToSection('timeline'); handleSelect(); }}>TIMELINE</Nav.Link>
           <Nav.Link href="#contact">CONTACT</Nav.Link>
         </Nav>

@@ -80,7 +80,7 @@
 .welcome {
   text-align: center;
   align-items: center;
-  color: darkgray;
+  color: #6c757d;
 }
 
 .subContainer-flex {
@@ -208,7 +208,6 @@
   border-radius: 5%;
   outline: 4px solid white;
   outline-offset: -12px;
-  box-sizing: border-box;
 }
 
 
