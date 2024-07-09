@@ -327,7 +327,7 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .main {
     background-color: #000;
     display: flex;
@@ -524,7 +524,7 @@
 @media (max-height: 620px) {
 
   .main {
-    height: 100vh;
+    height: 150vh;
     margin-bottom: 10em;
     background-color: #000;
   }
