@@ -160,7 +160,9 @@
 .accordion-body{
   display: flex;
   flex-direction: column;
-  padding: 1.5em;
+  padding: 0.5em;
+  text-align: justify;
+  width: 20em;
 }
 
 .accordion-item{
@@ -256,6 +258,12 @@
   }
 
   .accordion-header{
+    width: 18em;
+    font-size: 16px;
+    padding: 1em;
+  }
+
+  .accordion-body{
     width: 18em;
     font-size: 16px;
     padding: 1em;

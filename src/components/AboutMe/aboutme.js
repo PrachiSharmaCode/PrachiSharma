@@ -34,7 +34,7 @@ export default function Aboutme() {
               <div className="check">
                 <img className="profileImg" src={Me} alt="prachi"></img>
               </div>
-              <p ><em>Hello, I am</em></p>
+              <p >Hello, I am</p>
             </div>
             <div className="introduction">
               <p className="head-name">PRACHI SHARMA</p>

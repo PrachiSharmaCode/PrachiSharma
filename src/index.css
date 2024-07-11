@@ -5,8 +5,10 @@
 :root {
   --buttonPriColor: #fb8b24;
   /* --scoll-color: #ffb703; */
+    /* --scoll-color: #ff5400;  orange */
   --scoll-color: #9381ff;
-  /* --scoll-color: #613dc1; */
+  /* --scoll-color: #cb1b16; */
+  /* --scoll-color: #797d62; */
 
   /* c8553d */
   --nameColor: #2a9d8f;
@@ -25,7 +27,7 @@
   --navLinkHover: #e76f51;
 
   --background-color: #ffffff;
-  --text-color: #000000;
+  --text-color: #372d2d;
 
   --startColor: transparent;
   --endColor: transparent;
