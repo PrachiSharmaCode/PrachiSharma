@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.8d065692.chunk.css",
-    "main.js": "/static/js/main.0d7267e1.chunk.js",
-    "main.js.map": "/static/js/main.0d7267e1.chunk.js.map",
+    "main.css": "/static/css/main.2d5647df.chunk.css",
+    "main.js": "/static/js/main.4bd3dcc1.chunk.js",
+    "main.js.map": "/static/js/main.4bd3dcc1.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.0f1761b8.js",
     "runtime-main.js.map": "/static/js/runtime-main.0f1761b8.js.map",
     "static/css/2.d8df6e2a.chunk.css": "/static/css/2.d8df6e2a.chunk.css",
-    "static/js/2.0e33a7af.chunk.js": "/static/js/2.0e33a7af.chunk.js",
-    "static/js/2.0e33a7af.chunk.js.map": "/static/js/2.0e33a7af.chunk.js.map",
+    "static/js/2.8e6ea0e8.chunk.js": "/static/js/2.8e6ea0e8.chunk.js",
+    "static/js/2.8e6ea0e8.chunk.js.map": "/static/js/2.8e6ea0e8.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.b1b3f09446529d1a8f81ca933c4177b7.js": "/precache-manifest.b1b3f09446529d1a8f81ca933c4177b7.js",
+    "precache-manifest.e9400541af3d1eefea9c2d7030d1593d.js": "/precache-manifest.e9400541af3d1eefea9c2d7030d1593d.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.d8df6e2a.chunk.css.map": "/static/css/2.d8df6e2a.chunk.css.map",
-    "static/css/main.8d065692.chunk.css.map": "/static/css/main.8d065692.chunk.css.map",
-    "static/js/2.0e33a7af.chunk.js.LICENSE.txt": "/static/js/2.0e33a7af.chunk.js.LICENSE.txt",
-    "static/media/SharmaPrachiResume.pdf": "/static/media/SharmaPrachiResume.b173e75c.pdf",
+    "static/css/main.2d5647df.chunk.css.map": "/static/css/main.2d5647df.chunk.css.map",
+    "static/js/2.8e6ea0e8.chunk.js.LICENSE.txt": "/static/js/2.8e6ea0e8.chunk.js.LICENSE.txt",
+    "static/media/ResumePrachiSharma.pdf": "/static/media/ResumePrachiSharma.741dc488.pdf",
     "static/media/angularLogo.png": "/static/media/angularLogo.fd61b046.png",
     "static/media/awsLogo.png": "/static/media/awsLogo.5af8c6a5.png",
     "static/media/cplusplusLogo.png": "/static/media/cplusplusLogo.ba973eb2.png",
@@ -32,7 +32,7 @@
     "static/media/jsLogo.png": "/static/media/jsLogo.1bd48efe.png",
     "static/media/mysqlLogo.png": "/static/media/mysqlLogo.6bff2df1.png",
     "static/media/nodeLogo.png": "/static/media/nodeLogo.994a7250.png",
-    "static/media/prachipic.jpg": "/static/media/prachipic.f6c745f9.jpg",
+    "static/media/pp.jpg": "/static/media/pp.13705dac.jpg",
     "static/media/reactLogo.png": "/static/media/reactLogo.f9af2c38.png",
     "static/media/scssLogo.png": "/static/media/scssLogo.229af2a5.png",
     "static/media/sonarQubeLogo.png": "/static/media/sonarQubeLogo.13367744.png",
@@ -41,8 +41,8 @@
   "entrypoints": [
     "static/js/runtime-main.0f1761b8.js",
     "static/css/2.d8df6e2a.chunk.css",
-    "static/js/2.0e33a7af.chunk.js",
-    "static/css/main.8d065692.chunk.css",
-    "static/js/main.0d7267e1.chunk.js"
+    "static/js/2.8e6ea0e8.chunk.js",
+    "static/css/main.2d5647df.chunk.css",
+    "static/js/main.4bd3dcc1.chunk.js"
   ]
 }
