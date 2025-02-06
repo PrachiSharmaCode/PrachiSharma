@@ -27,7 +27,7 @@ const Timeline = forwardRef((props, ref) => {
     for (let i = 0; i < events.length; i++) {
       if (i < events.length) {
         newTimeline.push(
-          <div key={events[i].id} className="event-description">
+          <div key={events[i].id} className="event-description ">
             <div className="time-description-container">
               <div className="time-description">
                 <i className={`${events[i].icon} event-icon`} aria-hidden="true"></i>
@@ -63,12 +63,12 @@ const Timeline = forwardRef((props, ref) => {
   };
 
   return (<>
-    <div ref={ref} className="timeline-box">
-      <div className="div-heading">
+    <div ref={ref} id="timeline" className="timeline-box">
+      <div className="div-heading fade-in-y">
         <p>TIMELINE</p>
       </div>
-      <div onScroll={scroll} ref={scrollableDivRef} className="timeline-container">
-        <div className="timeline">
+      <div onScroll={scroll} ref={scrollableDivRef} className="timeline-container fade-in-x">
+        <div className="timeline ">
           <div className="timeline-content">
 
             <div className="instruction-text">
@@ -77,7 +77,7 @@ const Timeline = forwardRef((props, ref) => {
                 !nextButtonClicked && <p>Scroll to see more <i class="fa fa-arrow-right nextButton"></i></p>
               } */}
             </div>
-            <div className="timeline-text">
+            <div className="timeline-text ">
               {timeline}
             </div>
           </div>

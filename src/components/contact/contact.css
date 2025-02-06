@@ -1,104 +1,231 @@
 .contact {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background-color: var(--scoll-color);
-  padding: 4em 1em;
+  flex-direction: row;
+  justify-content:center;
+  gap: 20em;
+  background-color: var(--light-color);
+  padding: 4em 0 4em 0;
   letter-spacing: 1px;
-  outline: 3px solid white;
-  outline-offset: -15px;
+  border-radius: 20px;
+  align-items: center;
 }
 
 .contact-heading {
-  color: #fff;
-  margin: 2% 1% 0 1%;
-  font-size: 2.5em;
-  font-weight: bold;
+  color: var(--accent-check);
+  font-size: 40px;
+  font-weight: bolder;
+  text-align: left;
+  text-shadow: 0px 4px 7px rgba(0,0,0,0.2);
+
+}
+
+.social-connect-message{
+  color: var(--accent-check);
+  font-size: 16px;
+  text-shadow: 0px 4px 7px rgba(0,0,0,0.2);
 }
 
 .contact-message {
-  color: #fff;
+  color:  var(--accent-check);
+  text-align: left;
   font-size: 18px;
-  margin: 1% 1% 0 1%;
+  font-weight: 500;
+  margin: 5% 0 0 0;
   line-height: 1.5;
   max-width: 600px;
 }
 
 .mail-contact {
-  margin: 0 0 3em 0 !important;
+  margin: 0.5em 0 3em 0 !important;
 }
 
 .contact-mail-address {
-  color: #fff;
+  color: var(--dark-color);
   font-size: 18px;
-  display: flex;
-  align-items: center;
-  text-decoration: none;
   letter-spacing: 1px;
   text-decoration: underline;
-}
-
-.contact-mail-address i {
-  margin-right: 0.5em;
-  transition: color 0.3s ease;
+  margin: 2em 0 1em 0;
+  cursor: pointer;
+  transition: color 0.5s ease;
 }
 
 .contact-mail-address:hover {
-  color: #000;
-  transform: scale(0.95); 
-  cursor: pointer;
+  color:  var(--accent-check);
+  transition: color 0.5s ease;
 }
 
 .socail-icon-contact {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 1em;
+  align-items: center;
   justify-content: center;
-  margin: 2.5em 0 2em 0;
+  text-align: center;
 }
 
-.icon-contact {
-  color: #fff;
-  margin: 0 1em;
-  cursor: pointer;
-  font-size: 2em;
+.social-icon-row{
+  margin-top: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  flex-direction: row;
+}
+
+.social-icon{
+  background-color: #000;
+  width: 8rem;
+  height: 8rem;
+  border: none;
+  border-radius: 20px;
+  align-items: center;
+  text-align: center;
+  align-content: center;
+  color: var(--accent-check);
+  transition: color 0.8s ease;
+  /* box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px; */
+  box-shadow: 0px 4px 7px rgba(0,0,0,0.2);;
+  
+}
+
+
+.social-icon:hover{
+  box-shadow: none;
+  color: var(--light-color);
   transition: color 0.3s ease;
 }
 
+
+.icon-contact {
+  font-size: 3em;
+  cursor: pointer;
+  transition: color 0.1s ease;
+}
+
 .icon-contact:hover {
-  color: #000;
-  transform: scale(0.9); 
+  color: var(--light-color);
+  transform: scale(1.1);
   cursor: pointer;
 }
 
-@media (max-width: 500px){
+@media (max-width: 1050px){
 
-  .contact {
-    border-top: 5px double var(--scoll-color);
+  .contact{
+    padding: 4em 4em 4em 4em;
+    margin: 0 10px 0 10px;
+    gap: 8em;
   }
-  
 
   .contact-message {
-    font-size: 14px;
-    margin: 8% 1% 0 1%;
-    max-width: 600px;
+    text-align: left;
+    font-size: 16px;
   }
 
-  .contact-heading {
-    margin: 1% 1% 0 1%;
-    font-size: 35px;
+  .socail-icon-contact {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .social-icon{
+    width: 6em;
+    height: 6rem;
   }
 
   .icon-contact {
-    color: #fff;
-    margin: 0 1em;
-    font-size: 24px;
+    font-size: 2em;
+  }
+
+  .social-icon-row{
+    gap: 10px;
+  }
+
+  .social-connect-message{
+    text-align: center;
+  }
+}
+
+@media (max-width: 900px){
+  .contact {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+
+  .socail-icon-contact {
+    margin-top: 0.5em;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+
+  .social-icon{
+    width: 5em;
+    height: 5rem;
+  }
+
+  .icon-contact {
+    font-size: 2em;
+  }
+
+
+  .contact-heading {
+    text-align: center;
+  }
+
+  .contact-message {
+    text-align: center;
+  }
+
+  .social-connect-message{
+    display: none;
+  }
+}
+
+
+@media (max-width: 500px){
+  .contact {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    padding: 4em 1em 4em 1em;
+    margin: 0 20px 0 20px;
+  }
+
+  .socail-icon-contact {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .social-icon{
+    width: 4em;
+    height: 4rem;
+  }
+
+  .icon-contact {
+    font-size: 1.5em;
+  }
+
+
+  .contact-heading {
+    text-align: center;
+    font-size: 32px;
+  }
+
+
+  .contact-message {
+    font-size: 14px;
+    padding: 0 0 0 0;
+    font-weight: bold;
+    text-align: center;
   }
 
   .contact-mail-address {
-    font-size: 16px;
+    font-size: 14px;
   }
-  
 
+  .social-connect-message{
+    display: none;
+  }
 }

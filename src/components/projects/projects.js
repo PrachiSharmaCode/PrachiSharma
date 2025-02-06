@@ -44,7 +44,7 @@ const Projects = forwardRef((props, ref) => {
     {
       projectsName: "Northeastern Univeristy's Website",
       projectDescription: "A significant part of my portfolio includes developing Northeastern University's Align program website. This comprehensive portal caters to faculty, current, and prospective students. It features user authentication, login, and registration, along with detailed statistics on student demographics, including enrollment in specific courses, gender ratios, and academic performance. This centralized hub fosters a connected and informed academic environment.",
-      projectTech: ["JAVA", "MAVEN", "REST Web Services", "Jersey", "Hibernate"],
+      projectTech: ["JAVA", "MAVEN", "REST Web Services", "Hibernate"],
       gitHubLink: "",
     },
   ];
@@ -52,18 +52,18 @@ const Projects = forwardRef((props, ref) => {
 
   return (<>
 
+    <div ref={ref} id="projects" className="div-heading fade-in-y">
+      <p>PROJECTS</p>
+    </div>
 
-    <div ref={ref} className="project-box">
-      <div className="project-container">
-        <div className="div-heading">
-          <p>PROJECTS</p>
-        </div>
+    <div className="project-box">
+      <div>
         <div className="card-container">
           {projectData.map((project) => (
-            <div className="card" key={project.projectsName}>
+            <div className="card fade-in-y" key={project.projectsName}>
               <div className="project-details">
-                <h5 className="project-name">{project.projectsName}</h5>
-                <p>{project.projectDescription}</p>
+                <h5 className="project-name fade-in-y">{project.projectsName}</h5>
+                <p className="project-description fade-in-y">{project.projectDescription}</p>
                 {project.gitHubLink !== "" && (
                   <a
                     target="_blank"
@@ -74,19 +74,20 @@ const Projects = forwardRef((props, ref) => {
                   </a>
                 )}
               </div>
-              <div className="project-tech">
+              <div className="project-tech fade-in-y">
                 <p className="tech-name">{project.projectTech.join(", ")}</p>
               </div>
             </div>
           ))}
         </div>
         <div className="small-screen-project">
-          {projectData.map((project, index) => (
-            <div className="" key={project.projectsName}>
+          {projectData.map((project, index) => {
+            const isOpen = activeKey === index.toString();
+            return (<div className="" key={project.projectsName}>
               <div className="accordian-container">
-                <Accordion activeKey={activeKey} flush>
+                <Accordion className="fade-in-y" activeKey={activeKey} flush>
                   <Accordion.Item eventKey={index.toString()}>
-                    <Accordion.Header onClick={() => handleToggle(index.toString())}>{project.projectsName}<i class="fa fa-chevron-down project-arrow"></i></Accordion.Header>
+                    <Accordion.Header onClick={() => handleToggle(index.toString())}>{project.projectsName}<i class={`fa fa-chevron-down project-arrow ${isOpen ? "rotate" : ""}`}></i></Accordion.Header>
                     <Accordion.Body>
                       {project.projectDescription}
                       {project.gitHubLink !== "" && (
@@ -99,7 +100,7 @@ const Projects = forwardRef((props, ref) => {
                         </a>
                       )}
                       <div className="accordian-project-tech">
-                       {project.projectTech.join(", ")}
+                        {project.projectTech.join(", ")}
                       </div>
                     </Accordion.Body>
                   </Accordion.Item>
@@ -108,8 +109,8 @@ const Projects = forwardRef((props, ref) => {
               <div className="project-tech">
                 <p className="tech-name">{project.projectTech.join(", ")}</p>
               </div>
-            </div>
-          ))}
+            </div>)
+          })}
         </div>
       </div>
     </div>

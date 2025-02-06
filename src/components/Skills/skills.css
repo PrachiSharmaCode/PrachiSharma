@@ -1,24 +1,26 @@
 .skill-box {
-  margin-top: 8em;
+  margin: 0 0 8em 0;
 }
 
 .skill-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 25px;
   margin-bottom: 20px;
+  color: #fff;
+  padding: 2% 5% 0 5%;
 }
 
 .skill-details {
   background-color: #fff;
-  color: #000;
+  color: #fff;
   padding: 5px;
   border-radius: 20px;
   text-align: center;
-  width: 110px;
+  width: 100px;
   transition: transform 0.3s, box-shadow 0.3s;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
 .skill-details:hover {
@@ -31,91 +33,29 @@
   height: 50px;
   margin-bottom: 15px;
   border-radius: 50%;
-  background-color: white;
   padding: 5px;
-  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
-  /* Subtle shadow for images */
 }
 
 .skill-name {
   font-size: 1rem;
-  font-weight: bold;
-  color: #333;
-}
-
-@media (max-width: 1050px) {
-
-  .skill-box {
-    margin: 0 5em 5em 3.5em;
-    ;
-    width: 90%;
-  }
-
-}
-
-@media (max-width: 900px) {
-
-  .skill-box {
-    margin: 1em 3em 5em 3em;
-    ;
-    width: 90%;
-  }
-
-}
-
-
-@media (max-width: 768px) {
-
-  .skill-box {
-    margin: 1em 3em 5em 3em;
-    width: 90%;
-  }
-
+  font-weight: 500;
+  color: #000;
 }
 
 @media (max-width: 500px) {
 
-  .skill-box {
-    margin: 8em 3em 5em 1.5em;
-    width: 90%;
-    text-align: center;
-    align-items: center;
+  .skill-name {
+    font-size: 12.5px;
   }
 
-
   .skill-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-    margin-bottom: 10px;
+    gap: 15px;
+    padding: 2% 1% 0 1%;
   }
 
   .skill-details {
-    background-color: #fff;
-    color: #000;
+    
     padding: 0;
-    border-radius: 10px;
-    text-align: center;
-    font-size: 10px;
-    width: 100px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   
   }
-
-  .skill-img {
-    width: 60px;
-    height: 60px;
-    margin-bottom: 15px;
-    border-radius: 5px;
-    background-color: #fff;
-    padding: 10px;
-    box-shadow: 0 0 0 rgba(0, 0, 0, 0.1);
-  }
-
-  .skill-name {
-    font-size: 14px;
-    font-weight: 500;
-    color: #333;
-  }
-
 }

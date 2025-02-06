@@ -33,6 +33,24 @@ const Skills = forwardRef((props, ref) => {
     { logo: javaIcon, name: "JAVA" },
     { logo: cIcon, name: "C++" },
     { logo: jsxIcon, name: "JSX" },
+    { logo: reactIcon, name: "React" },
+    { logo: nodeLogo, name: "Node" },
+    { logo: angularLogo, name: "Angular" },
+    { logo: cypressLogo, name: "Cypress" },
+    { logo: jestLogo, name: "Jest" },
+    { logo: cucumberLogo, name: "Cucumber" },
+    { logo: htmlLogo, name: "HTML" },
+    { logo: cssLogo, name: "CSS" },
+    { logo: scssLogo, name: "SCSS" },
+    { logo: mysqlLogo, name: "SQL" },
+    { logo: mongoLogo, name: "MongoDB" },
+    { logo: hibernateLogo, name: "Hibernate" },
+    { logo: hadoopLogo, name: "Hadoop" },
+    { logo: awsLogo, name: "AWS" },
+    { logo: gitLogo, name: "Git" },
+    { logo: grafanaLogo, name: "Grafana" },
+    { logo: sonarqubeLogo, name: "SonarQube" },
+    { logo: graphqlLogo, name: "GraphQL" },
   ];
 
   const webSkills = [
@@ -65,11 +83,11 @@ const Skills = forwardRef((props, ref) => {
 
    const renderSkillSection = (skills, title) => (
 
-    <div className="skill-container" >
+    <div className="skill-container fade-in-y" >
       {skills.map((skill) => (
-        <div className="skill-details" key={skill.name}>
-          <img className="skill-img" src={skill.logo} alt={skill.name} />
-          <p className="skill-name">{skill.name}</p>
+        <div className="skill-details fade-in-y" key={skill.name}>
+          <img className="skill-img fade-in-y" src={skill.logo} alt={skill.name} />
+          <p className="skill-name fade-in-y">{skill.name}</p>
         </div>
       ))}
     </div>
@@ -77,15 +95,14 @@ const Skills = forwardRef((props, ref) => {
   );
 
 
-  return (<>
-    <div ref={ref} className="skill-box">
-      <p className="div-heading">SKILLS</p>
+  return (
+    <div ref={ref} className="skill-box" id="skills">
+      <p className="div-heading fade-in-y">SKILLS</p>
       {renderSkillSection(skills, "Languages")}
-      {renderSkillSection(webSkills, "Web Technology")}
+      {/* {renderSkillSection(webSkills, "Web Technology")}
       {renderSkillSection(dataSkills, "Database")}
-      {renderSkillSection(softwareSkills, "Software")}
-    </div>
-  </>);
+      {renderSkillSection(softwareSkills, "Software")} */}
+    </div>);
 });
 
 export default Skills;
