@@ -121,8 +121,6 @@
 
 
 
-
-
 @media (max-width: 1050px) {
 
   .project-box {
@@ -212,8 +210,8 @@
 
   .project-arrow {
     position: absolute;
-    right: 2.5em;
-    color: var(--light-color);
+    right: 2%;
+    color: var(--accent-check);
     transition: transform 0.3s ease-in-out;
   }
 
@@ -235,18 +233,26 @@
   .accordian-project-link{
     color: var(--accent-check);
     position: absolute;
-    bottom: 40px;
+    bottom: 30px;
   }
+
+  .accordion-collapse {
+    transition: height 0.3s ease-in-out !important;
+    will-change: height;
+  }
+  
 
   .accordian-project-tech{
     font-weight: bold;
     position: absolute;
-    bottom: 15px;
+    bottom: 10px;
   }
 
   .accordian-container {
-    padding: 1em !important;
+    /* padding: 1em !important; */
+    margin: 1em;
     box-sizing: border-box;
+    border-bottom: 1px solid var(--accent-check);
   }
 
   .accordion-header {
@@ -256,12 +262,12 @@
 
   .accordion-button {
     width: 100%;
-    padding: 1em !important;
+    padding: 0.5em 0 0 0 !important;
     border: none;
     border-radius: 10px !important;
     text-align: left;
-    background-color: var(--accent-check);
-    color: var(--dark-color);
+    background-color: transparent;
+    color: var(--light-color);
   }
 
   .accordion-body {
@@ -272,9 +278,9 @@
     flex-direction: column;
     gap: 10px;
     border-radius: 10px;
-    border-bottom: 10px solid var(--accent-check);
-    height: 250px;
+    height: 260px;
     transition: max-height 3s ease-in-out !important; 
+    margin: 1em;
   }
 
   .card {

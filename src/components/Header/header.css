@@ -60,6 +60,8 @@
   }
   .navbar-collapse{
     justify-content: left !important;
+    transition: height 0.3s ease-in-out !important;
+    will-change: height;
   }
 
   .nav-link{
