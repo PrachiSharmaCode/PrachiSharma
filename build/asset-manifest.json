@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.2d5647df.chunk.css",
+    "main.css": "/static/css/main.8f32f8fc.chunk.css",
     "main.js": "/static/js/main.4bd3dcc1.chunk.js",
     "main.js.map": "/static/js/main.4bd3dcc1.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.0f1761b8.js",
@@ -9,10 +9,10 @@
     "static/js/2.8e6ea0e8.chunk.js": "/static/js/2.8e6ea0e8.chunk.js",
     "static/js/2.8e6ea0e8.chunk.js.map": "/static/js/2.8e6ea0e8.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.e9400541af3d1eefea9c2d7030d1593d.js": "/precache-manifest.e9400541af3d1eefea9c2d7030d1593d.js",
+    "precache-manifest.99b4aa377d4bf9d2d20f7b613057eed2.js": "/precache-manifest.99b4aa377d4bf9d2d20f7b613057eed2.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.d8df6e2a.chunk.css.map": "/static/css/2.d8df6e2a.chunk.css.map",
-    "static/css/main.2d5647df.chunk.css.map": "/static/css/main.2d5647df.chunk.css.map",
+    "static/css/main.8f32f8fc.chunk.css.map": "/static/css/main.8f32f8fc.chunk.css.map",
     "static/js/2.8e6ea0e8.chunk.js.LICENSE.txt": "/static/js/2.8e6ea0e8.chunk.js.LICENSE.txt",
     "static/media/ResumePrachiSharma.pdf": "/static/media/ResumePrachiSharma.741dc488.pdf",
     "static/media/angularLogo.png": "/static/media/angularLogo.fd61b046.png",
@@ -42,7 +42,7 @@
     "static/js/runtime-main.0f1761b8.js",
     "static/css/2.d8df6e2a.chunk.css",
     "static/js/2.8e6ea0e8.chunk.js",
-    "static/css/main.2d5647df.chunk.css",
+    "static/css/main.8f32f8fc.chunk.css",
     "static/js/main.4bd3dcc1.chunk.js"
   ]
 }

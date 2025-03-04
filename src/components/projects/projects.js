@@ -12,6 +12,13 @@ const Projects = forwardRef((props, ref) => {
 
   const projectData = [
     {
+      projectsName: "Arvi Technologies and Consultation Website",
+      projectDescription: "Designed and developed a modern, fully responsive company website with a focus on performance and seamless user experience. The site features a custom navigation bar, a dynamic client showcase carousel using Intersection Observer, and a sleek glassmorphism UI. Implemented a user-friendly contact form with validation, ensuring smooth interaction.",
+      projectTech: ["React", "glassmorphism", "Intersection Observer"],
+      gitHubLink: "https://github.com/PrachiSharmaCode/arvi",
+      websiteLink: "https://arvitech.in/"
+    },
+    {
       projectsName: "Lion International School Records",
       projectDescription: "This application empowers school faculty to efficiently manage business operations, track accounts, and organize student records. I had the incredible opportunity to build and design a comprehensive management application using React.js. From crafting intuitive user interfaces to ensuring seamless functionality, every aspect of the frontend was meticulously tailored to meet the school's needs.",
       projectTech: ["JavaScript", "React"],
@@ -65,13 +72,26 @@ const Projects = forwardRef((props, ref) => {
                 <h5 className="project-name fade-in-y">{project.projectsName}</h5>
                 <p className="project-description fade-in-y">{project.projectDescription}</p>
                 {project.gitHubLink !== "" && (
-                  <a
-                    target="_blank"
-                    className="project-link"
-                    href={project.gitHubLink}
-                  >
-                    Github <i className="fa fa-github project-icon"></i>
-                  </a>
+                  <div className="project-external-links-container">
+                    {
+                      project.websiteLink && <a
+                        target="_blank"
+                        className="project-link"
+                        href={project.websiteLink}
+                      >
+                        Website <i className="fa fa-external-link-square"></i>
+                      </a>
+                    }
+
+                    <a
+                      target="_blank"
+                      className="project-link"
+                      href={project.gitHubLink}
+                    >
+                      Github <i className="fa fa-github project-icon"></i>
+                    </a>
+                  </div>
+
                 )}
               </div>
               <div className="project-tech fade-in-y">
@@ -91,13 +111,25 @@ const Projects = forwardRef((props, ref) => {
                     <Accordion.Body>
                       {project.projectDescription}
                       {project.gitHubLink !== "" && (
+                        <div className="project-external-links-container">
+                        {
+                          project.websiteLink && <a
+                            target="_blank"
+                            className="project-link"
+                            href={project.gitHubLink}
+                          >
+                            Website <i className="fa fa-external-link-square"></i>
+                          </a>
+                        }
+    
                         <a
                           target="_blank"
-                          className="accordian-project-link"
+                          className="project-link"
                           href={project.gitHubLink}
                         >
                           Github <i className="fa fa-github project-icon"></i>
                         </a>
+                      </div>
                       )}
                       <div className="accordian-project-tech">
                         {project.projectTech.join(", ")}
