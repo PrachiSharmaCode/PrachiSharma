@@ -116,7 +116,7 @@ const Projects = forwardRef((props, ref) => {
                           project.websiteLink && <a
                             target="_blank"
                             className="project-link"
-                            href={project.gitHubLink}
+                            href={project.websiteLink}
                           >
                             Website <i className="fa fa-external-link-square"></i>
                           </a>
