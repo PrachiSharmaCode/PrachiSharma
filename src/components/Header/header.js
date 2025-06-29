@@ -1,7 +1,7 @@
 import React, { Component, useEffect, useState } from "react";
 import "./header.css";
 import { Navbar, Nav, Button } from "react-bootstrap";
-import resume from "../../doc/ResumePrachiSharma.pdf";
+import resume from "../../doc/SharmaPrachiResume.pdf";
 
 export default function Header({ scrollToSection, activeSection }) {
 
