@@ -45,7 +45,7 @@ const Contact = forwardRef((props, ref) => {
         <div className="social-icon-row fade-in-y">
 
           <div>
-            <a target="_blank" href="https://www.instagram.com/prachieq/">
+            <a target="_blank" href="https://www.instagram.com/prachi.ext">
               <button className="social-icon">
                 <i className="fa fa-instagram icon-contact fade-in-y" aria-hidden="true"></i>
               </button>

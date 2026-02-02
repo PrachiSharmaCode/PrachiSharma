@@ -1,7 +1,6 @@
 import React, { Component, useEffect, useState } from "react";
 import "./header.css";
 import { Navbar, Nav, Button } from "react-bootstrap";
-import resume from "../../doc/SharmaPrachiResume.pdf";
 
 export default function Header({ scrollToSection, activeSection }) {
 
@@ -33,7 +32,7 @@ export default function Header({ scrollToSection, activeSection }) {
         </Nav>
       </Navbar.Collapse>
       <div>
-          <Button href={resume} target="_blank" className="resume-button">Resume</Button>
+          <Button href={`${process.env.PUBLIC_URL}/PrachiSharmaResume.pdf`} target="_blank" className="resume-button">Resume</Button>
         </div>
     </Navbar>
   </>

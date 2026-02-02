@@ -51,6 +51,7 @@
   from {
     max-width: 0;
   }
+
   to {
     max-width: 100%;
   }
@@ -70,6 +71,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  gap: 10px;
 }
 
 .intro-para a {
@@ -78,12 +80,17 @@
   font-weight: 400;
 }
 
+.intro-para-highlight{
+  color: black;
+    font-weight: 800;
+}
+
 .intro-para {
   text-align: center;
   padding: 0 !important;
   margin: 0 !important;
   font-weight: 500;
-  /* text-shadow:  0px 2px 5px rgba(0,0,0,0.2); */
+  /* text-shadow:  0px 2px 2px rgba(0,0,0,0.2); */
 }
 
 .intro {
@@ -103,21 +110,24 @@
 }
 
 .scroll-down-div {
+  position: absolute;
+  bottom: 45px;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   justify-content: center;
-  position: absolute;
-  bottom: 1px;
-  left: 50%;
-  transform: translate(-50%);
+  align-items: center;
+  z-index: 10;
 }
 
 .scroll-down-container {
   height: 45px;
   width: 45px;
-  margin-top: 0;
-  border-radius: 60px;
-  text-align: center;
-  animation: scrollDwon 1.5s infinite;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: scrollDown 1.5s infinite;
 }
 
 .scroll-down-action {
@@ -125,12 +135,55 @@
   height: 25px;
   border-left: 5px dashed var(--accent-check);
   border-bottom: 5px dashed var(--accent-check);
-  transform: rotate(-45deg) translate(50%);
+  transform: rotate(-45deg);
 }
 
-@keyframes scrollDwon {
+.about-link {
+  color: black;
+  text-decoration: none;
+  /* optional, if you don't want underline */
+}
+
+.about-link:hover {
+  color: var(--accent-check);
+}
+
+/* Make the icon follow the link hover */
+.about-link .external-link-icon {
+  font-size: 12px;
+  color: black;
+  transition: color 0.2s ease;
+  /* smooth effect */
+}
+
+.about-link:hover .external-link-icon {
+  color: var(--accent-check);
+}
+
+
+
+/* .about-link{
+  color: black !important
+}
+
+.about-link:hover{
+  color: var(--accent-check);
+}
+
+
+.external-link-icon{
+  font-size: 12px;
+  color: black;
+}
+
+.external-link-icon:hover{
+  color: var(--accent-check);
+} */
+
+
+@keyframes scrollDown {
   0% {
-    transform: translate(0);
+    transform: translateY(0);
   }
 
   20% {
@@ -138,7 +191,7 @@
   }
 
   40% {
-    transform: translate(0);
+    transform: translateY(0);
   }
 }
 
@@ -153,7 +206,7 @@
     align-items: center;
     padding: 50px 20px 50px 20px;
   }
-  
+
 
 
   .container {
@@ -182,7 +235,7 @@
 
 @media screen and (max-width: 480px) {
 
-  .scroll-down-div{
+  .scroll-down-div {
     display: none;
   }
 

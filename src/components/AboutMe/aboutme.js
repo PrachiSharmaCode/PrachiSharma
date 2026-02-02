@@ -1,6 +1,5 @@
 import React, { useState, useEffect, forwardRef } from "react";
 import "./aboutme.css";
-// import Me from "../../images/7226598A-81D5-4874-B404-867A7143316C.jpg";
 import Me from "../../images/pp.jpg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
@@ -24,7 +23,7 @@ const Aboutme = forwardRef((props, ref) => {
     };
   }, []);
 
-  return(
+  return (
     <div ref={ref} className="main" id="about">
       <div className="container">
         <div className="intro">
@@ -39,23 +38,23 @@ const Aboutme = forwardRef((props, ref) => {
           </div>
           <div className="intro-para fade-in-y">
             <p>
-              I am a software developer based in vibrant city of Seattle. <br></br><br></br> With a background encompassing 5 years of experience in the industry
-              and a Master's degree in Computer Science from <a className="about-link" target="1" href="https://seattle.northeastern.edu/">Northeastern University <FontAwesomeIcon className="external-link-icon" icon={faArrowUpRightFromSquare} /></a>, I specialize in transforming innovative ideas into interactive digital solutions.<br></br>
-              <br></br>
-              My expertise lies in frontend development, complemented by a strong understanding of backend technologies. <br></br><br></br>
-              Take a journey through my portfolio. <br></br>If you have an opportunity that aligns with my expertise, I would love to connect and explore the possibilities.
+              I am a Software Engineer who enjoys building smooth, user-friendly frontend experiences while supporting them with reliable backend work. 
+              I have <span className="intro-para-highlight">6 years of experience</span> working with <span className="intro-para-highlight">React, JavaScript, TypeScript, Node.js,</span> and <span className="intro-para-highlight">AWS,</span> and I hold a Master’s in Computer Science from {" "}
+              <a className="about-link" target="1" href="https://seattle.northeastern.edu/">Northeastern University <FontAwesomeIcon className="external-link-icon" icon={faArrowUpRightFromSquare} /></a>.
+              <br/><br/>
+              Take a stroll and explore my portfolio!
             </p>
           </div>
         </div>
       </div>
       {
-          !isScrolled && <div className="scroll-down-div">
-            <div className="scroll-down-container">
-              <div className="scroll-down-action">
-              </div>
+        !isScrolled && <div className="scroll-down-div">
+          <div className="scroll-down-container">
+            <div className="scroll-down-action">
             </div>
           </div>
-        }
+        </div>
+      }
     </div>);
 });
 

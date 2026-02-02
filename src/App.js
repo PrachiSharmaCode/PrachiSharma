@@ -148,7 +148,7 @@ export default function App() {
   return (<>
     <div className="app-back" id="about">
       <Header scrollToSection={scrollToSection} activeSection={activeSection} ></Header>
-      <AboutMe ref={aboutRef}></AboutMe>
+      <AboutMe  ref={aboutRef}></AboutMe>
       <Skills ref={skillRef} ></Skills>
       <Projects ref={projectRef} ></Projects>
       <Timeline ref={timelineRef} ></Timeline>
