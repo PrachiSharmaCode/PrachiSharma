@@ -1,10 +1,9 @@
 {
   "files": {
-    "main.css": "/static/css/main.6c93b9e0.css",
-    "main.js": "/static/js/main.88599563.js",
+    "main.css": "/static/css/main.19047e09.css",
+    "main.js": "/static/js/main.b8219704.js",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
     "static/media/cucumberLogo.png": "/static/media/cucumberLogo.33d986bfb9fbf0fcba6b.png",
-    "static/media/SharmaPrachiResume.pdf": "/static/media/SharmaPrachiResume.2c9f6e40d57207fb1d1d.pdf",
     "static/media/fontawesome-webfont.eot": "/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
     "static/media/fontawesome-webfont.ttf?v=4.7.0": "/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
     "static/media/fontawesome-webfont.woff?v=4.7.0": "/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
@@ -30,11 +29,11 @@
     "static/media/hibernateLogo.png": "/static/media/hibernateLogo.76293415e2a5a543c359.png",
     "static/media/jsLogo.png": "/static/media/jsLogo.779b2913d8cbb0d2296c.png",
     "index.html": "/index.html",
-    "main.6c93b9e0.css.map": "/static/css/main.6c93b9e0.css.map",
-    "main.88599563.js.map": "/static/js/main.88599563.js.map"
+    "main.19047e09.css.map": "/static/css/main.19047e09.css.map",
+    "main.b8219704.js.map": "/static/js/main.b8219704.js.map"
   },
   "entrypoints": [
-    "static/css/main.6c93b9e0.css",
-    "static/js/main.88599563.js"
+    "static/css/main.19047e09.css",
+    "static/js/main.b8219704.js"
   ]
 }
