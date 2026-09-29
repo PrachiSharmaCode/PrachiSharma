@@ -1,101 +1,92 @@
 import React, { useState, forwardRef } from "react";
 import Accordion from 'react-bootstrap/Accordion';
 import "./projects.css";
+import { trackEvent } from "../../utils/analytics";
 
 const Projects = forwardRef((props, ref) => {
 
   const [activeKey, setActiveKey] = useState(null);
 
-  const handleToggle = (key) => {
+  const handleToggle = (key, projectName) => {
+    trackEvent("project_accordion_toggle", {
+      project_name: projectName,
+      action: activeKey === key ? "close" : "open",
+    });
     setActiveKey(activeKey === key ? null : key);
   };
 
   const projectData = [
     {
-      projectsName: "Arvi Technologies and Consultation Website",
-      projectDescription: "Designed and developed a modern, fully responsive company website with a focus on performance and seamless user experience. The site features a custom navigation bar, a dynamic client showcase carousel using Intersection Observer, and a sleek glassmorphism UI. Implemented a user-friendly contact form with validation, ensuring smooth interaction.",
-      projectTech: ["React", "glassmorphism", "Intersection Observer"],
-      gitHubLink: "https://github.com/PrachiSharmaCode/arvi",
-      websiteLink: "https://arvitech.in/"
+      projectsName: "Quiz-It-All",
+      projectDescription: "Quiz It All is an AI-powered application for creating interactive quizzes from topics and uploaded PDFs. It combines document retrieval with generative AI to create questions grounded in the uploaded content, making it easy to turn learning material into an interactive quiz.",
+      projectTech: ["OpenAI API", "LangChain", "RAG", "React", "Node.js", ],
+      projectLinks: [["https://youtu.be/78U3D3IpB3A?si=J7KjUB_GReYGt6Sw", "View Demo"],["https://github.com/PrachiSharmaCode/Quiz-It-All", "GitHub"]],
+    },
+    {
+      projectsName: "AWS SageMaker - Lifecycle Configuration",
+      projectDescription: "Built the frontend experience for SageMaker Studio Lifecycle Configuration, enabling users to attach reusable setup scripts to development environments. Owned technical design, React implementation, backend integration, state and data flow, edge cases, and automated testing.",
+      projectTech: ["React", "TypeScript", "GraphQL"],
+      projectLinks: [["https://docs.aws.amazon.com/sagemaker/latest/dg/notebook-lifecycle-config.html", "Feature Docs"]],
+    },
+    {
+      projectsName: "Whampy",
+      projectDescription: "A WhatsApp marketing platform built on Meta's WhatsApp Business APIs for campaigns, templates, messaging, and customer interactions. Whampy became a Meta Tech Provider, enabling businesses to connect and manage their WhatsApp Business accounts directly through the platform. I designed and built the frontend architecture and reusable workflows as the product evolved.",
+      projectTech: ["React", "JavaScript", "Meta API"],
+      projectLinks: [["https://www.whampy.com/", "Visit Whampy"]],
     },
     {
       projectsName: "Lion International School Records",
-      projectDescription: "This application empowers school faculty to efficiently manage business operations, track accounts, and organize student records. I had the incredible opportunity to build and design a comprehensive management application using React.js. From crafting intuitive user interfaces to ensuring seamless functionality, every aspect of the frontend was meticulously tailored to meet the school's needs.",
-      projectTech: ["JavaScript", "React"],
-      gitHubLink: "https://github.com/PrachiSharmaCode/LionsInternationalSchoolRecords/tree/main",
-    },
-    {
-      projectsName: "Allot",
-      projectDescription: "Developed an android application to assign tasks and to keep track of work among collogues, mates etc. Implemented functionalities like Geofencing, Hamburger menu, Floating Action Buttons and Notifications.",
-      projectTech: ["JavaScript", "Typesacript", "React"],
-      gitHubLink: "https://github.com/PrachiSharmaCode/ALLOT",
-    },
-    {
-      projectsName: "StoreMapp",
-      projectDescription: "Addressing the need for streamlined product location experiences, I designed an interface ensuring swift access to items within store layouts. This user-friendly design optimizes the shopping journey, allowing customers to navigate through a store's product arrangement with ease. The goal is to enhance user satisfaction by minimizing search time, contributing to a more efficient shopping experience.",
-      projectTech: ["MySQL", "Image Mapping", "JSP"],
-      gitHubLink: "https://github.com/PrachiSharmaCode/Storemapp",
+      projectDescription: "A school management application that helps faculty and staff manage student records, accounts and day-to-day administrative workflows in one place. I built the React-based frontend with a focus on making complex record management simpler and easier to use." ,
+      projectTech: ["JavaScript", "React", "Node.js"],
+      projectLinks: [["https://github.com/PrachiSharmaCode/LionsInternationalSchoolRecords/tree/main", "GitHub"]],
     },
     {
       projectsName: "The Food Truck Web",
-      projectDescription: "I led the development of an innovative website revolutionizing the food truck industry. Users can effortlessly search for food trucks using criteria like name, city, address, and pin code. The integration of Google Maps enhances the experience by providing location tracking. This platform simplifies locating favorite food trucks, offering convenience on the go.",
-      projectTech: ["JavaScript", "Angular", "Node", "Google Map API"],
-      gitHubLink: "https://github.com/PrachiSharmaCode/WebDevelopment/tree/master/project",
-    },
-    {
-      projectsName: "Transportation Data Analysis",
-      projectDescription: "Delving into data analytics, I analyzed the US Department of Transportation's aviation dataset from 2000 to 2008. The objective was to identify reliable airlines during specific time intervals. By creating a ranking system based on metrics like average delay in arrival and departure times, I aimed to provide valuable insights into airline reliability, aiding travelers in making informed decisions.",
-      projectTech: ["MapReduce", "Hadoop", "HBase"],
-      gitHubLink: "https://github.com/PrachiSharmaCode/TransportationDataAnalysis/blob/master/FinalReport%20(2).pdf",
-    },
-    {
-      projectsName: "Northeastern Univeristy's Website",
-      projectDescription: "A significant part of my portfolio includes developing Northeastern University's Align program website. This comprehensive portal caters to faculty, current, and prospective students. It features user authentication, login, and registration, along with detailed statistics on student demographics, including enrollment in specific courses, gender ratios, and academic performance. This centralized hub fosters a connected and informed academic environment.",
-      projectTech: ["JAVA", "MAVEN", "REST Web Services", "Hibernate"],
-      gitHubLink: "",
+      projectDescription: "A web application that helps users discover food trucks by name, city, address, location or cuisine. I built the frontend experience and integrated the Google Maps API to support location-based search and make nearby food trucks easier to find.",
+      projectTech: ["JavaScript", "Angular", "Node.js", "Google Maps API"],
+      projectLinks: [["https://github.com/PrachiSharmaCode/WebDevelopment/tree/master/project", "GitHub"]],
     },
   ];
 
 
-  return (<>
+  return (<section ref={ref} id="projects" className="project-section">
 
-    <div ref={ref} id="projects" className="div-heading fade-in-y">
-      <p>PROJECTS</p>
-    </div>
+    <h2 className="div-heading fade-in-y">FEATURED WORK</h2>
 
     <div className="project-box">
       <div>
         <div className="card-container">
           {projectData.map((project) => (
-            <div className="card fade-in-y" key={project.projectsName}>
+            <div className="project-card fade-in-y" key={project.projectsName}>
               <div className="project-details">
-                <h5 className="project-name fade-in-y">{project.projectsName}</h5>
-                <p className="project-description fade-in-y">{project.projectDescription}</p>
-                {project.gitHubLink !== "" && (
-                  <div className="project-external-links-container">
-                    {
-                      project.websiteLink && <a
-                        target="_blank"
-                        className="project-link"
-                        href={project.websiteLink}
-                      >
-                        Website <i className="fa fa-external-link-square"></i>
-                      </a>
-                    }
-
-                    <a
-                      target="_blank"
-                      className="project-link"
-                      href={project.gitHubLink}
-                    >
-                      Github <i className="fa fa-github project-icon"></i>
-                    </a>
-                  </div>
-
-                )}
+                <div className="project-copy">
+                  <h5 className="project-name fade-in-y">{project.projectsName}</h5>
+                  <p className="project-description fade-in-y">{project.projectDescription}</p>
+                  {project.projectLinks?.length > 0 && (
+                    <div className="project-external-links-container">
+                      {project.projectLinks.map(([link, text]) => (
+                        <a
+                          key={`${text}-${link}`}
+                          href={link}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="project-link"
+                          onClick={() => trackEvent("project_link_click", {
+                            project_name: project.projectsName,
+                            link_text: text,
+                          })}
+                        >
+                          {text} <i className="fa fa-external-link-square"></i>
+                        </a>
+                      ))}
+                    </div>
+                  )}
+                </div>
               </div>
-              <div className="project-tech fade-in-y">
-                <p className="tech-name">{project.projectTech.join(", ")}</p>
+              <div className="project-tech">
+                {project.projectTech.map((tech) => (
+                  <span className="project-tech-tag" key={tech}>{tech}</span>
+                ))}
               </div>
             </div>
           ))}
@@ -107,32 +98,34 @@ const Projects = forwardRef((props, ref) => {
               <div className="accordian-container">
                 <Accordion className="fade-in-y" activeKey={activeKey} flush>
                   <Accordion.Item eventKey={index.toString()}>
-                    <Accordion.Header onClick={() => handleToggle(index.toString())}>{project.projectsName}<i class={`fa fa-chevron-down project-arrow ${isOpen ? "rotate" : ""}`}></i></Accordion.Header>
+                    <Accordion.Header onClick={() => handleToggle(index.toString(), project.projectsName)}>{project.projectsName}<i className={`fa fa-chevron-down project-arrow ${isOpen ? "rotate" : ""}`} aria-hidden="true"></i></Accordion.Header>
                     <Accordion.Body>
-                      {project.projectDescription}
-                      {project.gitHubLink !== "" && (
+                      <p className="accordion-project-description">
+                        {project.projectDescription}
+                      </p>
+                      {project.projectLinks?.length > 0 && (
                         <div className="project-external-links-container">
-                        {
-                          project.websiteLink && <a
-                            target="_blank"
-                            className="project-link"
-                            href={project.websiteLink}
-                          >
-                            Website <i className="fa fa-external-link-square"></i>
-                          </a>
-                        }
-    
-                        <a
-                          target="_blank"
-                          className="project-link"
-                          href={project.gitHubLink}
-                        >
-                          Github <i className="fa fa-github project-icon"></i>
-                        </a>
-                      </div>
+                          {project.projectLinks.map(([link, text]) => (
+                            <a
+                              key={`${text}-${link}`}
+                              href={link}
+                              target="_blank"
+                              rel="noreferrer"
+                              className="project-link"
+                              onClick={() => trackEvent("project_link_click", {
+                                project_name: project.projectsName,
+                                link_text: text,
+                              })}
+                            >
+                              {text} <i className="fa fa-external-link-square"></i>
+                            </a>
+                          ))}
+                        </div>
                       )}
-                      <div className="accordian-project-tech">
-                        {project.projectTech.join(", ")}
+                      <div className="accordian-project-tech" aria-label="Technologies used">
+                        {project.projectTech.map((tech) => (
+                          <span className="project-tech-tag" key={tech}>{tech}</span>
+                        ))}
                       </div>
                     </Accordion.Body>
                   </Accordion.Item>
@@ -146,7 +139,7 @@ const Projects = forwardRef((props, ref) => {
         </div>
       </div>
     </div>
-  </>);
+  </section>);
 });
 
 export default Projects;

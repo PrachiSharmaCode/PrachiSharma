@@ -1,6 +1,7 @@
-import React, { Component, useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./header.css";
 import { Navbar, Nav, Button } from "react-bootstrap";
+import { trackEvent } from "../../utils/analytics";
 
 export default function Header({ scrollToSection, activeSection }) {
 
@@ -10,6 +11,13 @@ export default function Header({ scrollToSection, activeSection }) {
     setExpanded(false);
   };
 
+  const handleNavigation = (event, destination) => {
+    event.preventDefault();
+    trackEvent("navigation_click", { destination });
+    scrollToSection(destination);
+    handleSelect();
+  };
+
   return (<>
     
 
@@ -17,25 +25,32 @@ export default function Header({ scrollToSection, activeSection }) {
       collapseOnSelect
       expanded={expanded}
       onToggle={setExpanded}
-      className=" navbar navbar-light bg-dark"
+      className="navbar navbar-light bg-dark"
       bg="dark"
       expand="lg"
     >
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="me-auto">
-          <Nav.Link className={activeSection === 'about' ? 'active' : ''} onClick={() => { scrollToSection('about'); handleSelect(); }}>About</Nav.Link>
-          <Nav.Link className={activeSection === 'skills' ? 'active' : ''} onClick={() => { scrollToSection('skills'); handleSelect(); }}>Skills</Nav.Link>
-          <Nav.Link className={activeSection === 'projects' ? 'active' : ''} onClick={() => {scrollToSection('projects'); handleSelect(); }}>Projects</Nav.Link>
-          <Nav.Link  className={activeSection === 'timeline' ? 'active' : ''} onClick={() => {scrollToSection('timeline'); handleSelect(); }}>Timeline</Nav.Link>
-          <Nav.Link className={activeSection === 'contact' ? 'active' : ''} onClick={() => {scrollToSection('contact'); handleSelect(); }}>Contact</Nav.Link>
+        <Nav
+          className="navbar-links"
+          activeKey={activeSection ? `#${activeSection}` : null}
+        >
+          <Nav.Link href="#about" eventKey="#about" onClick={(event) => handleNavigation(event, 'about')}>About</Nav.Link>
+          <Nav.Link href="#skills" eventKey="#skills" onClick={(event) => handleNavigation(event, 'skills')}>Skills</Nav.Link>
+          <Nav.Link href="#projects" eventKey="#projects" onClick={(event) => handleNavigation(event, 'projects')}>Featured Work</Nav.Link>
+          <Nav.Link href="#timeline" eventKey="#timeline" onClick={(event) => handleNavigation(event, 'timeline')}>Timeline</Nav.Link>
+          <Nav.Link href="#contact" eventKey="#contact" onClick={(event) => handleNavigation(event, 'contact')}>Contact</Nav.Link>
+          <Button
+            href={`${process.env.PUBLIC_URL}/PrachiSharmaResume2026.pdf`}
+            target="_blank"
+            className="resume-button"
+            onClick={() => trackEvent("resume_click", { location: "navbar", action: "open" })}
+          >
+            Resume
+          </Button>
         </Nav>
       </Navbar.Collapse>
-      <div>
-          <Button href={`${process.env.PUBLIC_URL}/PrachiSharmaResume.pdf`} target="_blank" className="resume-button">Resume</Button>
-        </div>
     </Navbar>
   </>
   );
 }
-

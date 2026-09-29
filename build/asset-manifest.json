@@ -1,24 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.6c93b9e0.css",
-    "main.js": "/static/js/main.88599563.js",
+    "main.css": "/static/css/main.2f95498e.css",
+    "main.js": "/static/js/main.1c5cf131.js",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
     "static/media/cucumberLogo.png": "/static/media/cucumberLogo.33d986bfb9fbf0fcba6b.png",
-    "static/media/SharmaPrachiResume.pdf": "/static/media/SharmaPrachiResume.2c9f6e40d57207fb1d1d.pdf",
     "static/media/fontawesome-webfont.eot": "/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
     "static/media/fontawesome-webfont.ttf?v=4.7.0": "/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
     "static/media/fontawesome-webfont.woff?v=4.7.0": "/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
     "static/media/pp.jpg": "/static/media/pp.6763637d67cb041037b3.jpg",
     "static/media/fontawesome-webfont.woff2?v=4.7.0": "/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
-    "static/media/javaLogo.png": "/static/media/javaLogo.e44aa1a541ab2fabec28.png",
     "static/media/jestLogo.png": "/static/media/jestLogo.23787ed6bb50bb624339.png",
-    "static/media/cplusplusLogo.png": "/static/media/cplusplusLogo.d72cc26006e999acc6bf.png",
+    "static/media/expressjs.jpg": "/static/media/expressjs.c148180bc5940f19f237.jpg",
+    "static/media/openAI.jpg": "/static/media/openAI.dbbad0e4a8b8f5ed8267.jpg",
     "static/media/cypressLogo.png": "/static/media/cypressLogo.41f4ce8df2b1bd057829.png",
+    "static/media/tailwindIcon.jpg": "/static/media/tailwindIcon.451133dc663a798e5e85.jpg",
     "static/media/grafanaLogo.png": "/static/media/grafanaLogo.d61a35f02ab75200cbf7.png",
     "static/media/reactLogo.png": "/static/media/reactLogo.3a933225203be01a23a9.png",
     "static/media/sonarQubeLogo.png": "/static/media/sonarQubeLogo.b172d5f3d399082f8411.png",
     "static/media/scssLogo.png": "/static/media/scssLogo.ba8248c2600036b8fdb6.png",
-    "static/media/hadoopLogo.png": "/static/media/hadoopLogo.572d520bec7575d28c98.png",
     "static/media/awsLogo.png": "/static/media/awsLogo.b68cabfc092c41cedcc2.png",
     "static/media/graphQLLogo.png": "/static/media/graphQLLogo.4e2dcc98ec0765babed1.png",
     "static/media/tyLogo.png": "/static/media/tyLogo.7f7074cd82122f34b402.png",
@@ -27,14 +26,14 @@
     "static/media/htmlLogo.png": "/static/media/htmlLogo.16b543c0c48ff6151c02.png",
     "static/media/cssLogo.png": "/static/media/cssLogo.3f1132cdf58162b9bd88.png",
     "static/media/angularLogo.png": "/static/media/angularLogo.1e67127a573b16047a77.png",
-    "static/media/hibernateLogo.png": "/static/media/hibernateLogo.76293415e2a5a543c359.png",
     "static/media/jsLogo.png": "/static/media/jsLogo.779b2913d8cbb0d2296c.png",
+    "static/media/materialUiIcon.webp": "/static/media/materialUiIcon.56f524c2e31f36de3514.webp",
     "index.html": "/index.html",
-    "main.6c93b9e0.css.map": "/static/css/main.6c93b9e0.css.map",
-    "main.88599563.js.map": "/static/js/main.88599563.js.map"
+    "main.2f95498e.css.map": "/static/css/main.2f95498e.css.map",
+    "main.1c5cf131.js.map": "/static/js/main.1c5cf131.js.map"
   },
   "entrypoints": [
-    "static/css/main.6c93b9e0.css",
-    "static/js/main.88599563.js"
+    "static/css/main.2f95498e.css",
+    "static/js/main.1c5cf131.js"
   ]
 }

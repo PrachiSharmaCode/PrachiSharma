@@ -1,88 +1,125 @@
-import React, { useRef, useEffect, useState, Component, forwardRef } from "react";
+import React, { useRef, useEffect, useState, forwardRef } from "react";
 import "./timeline.css";
+import { trackEvent } from "../../utils/analytics";
 
-const Timeline = forwardRef((props, ref) => {
-// const Timeline = () => {
-  const [start, setStart] = useState(0);
-  const [end, setEnd] = useState(2);
-  const [timeline, setTimeline] = useState([]);
+const Timeline = forwardRef((_, ref) => {
   const scrollableDivRef = useRef(null);
-  const [nextButtonClicked, setNextButtonClicked] = useState(false);
+  const timelineScrollMilestones = useRef(new Set());
+  const [isTimelineAtStart, setIsTimelineAtStart] = useState(true);
+  const [isTimelineScrollable, setIsTimelineScrollable] = useState(false);
 
 
   const events = [
-    { id: 1, date: 'Dec 2022', extraText: "Started working as", company: 'Ford Motors', position: 'Software Engineer', icon: "fa fa-briefcase", location: "Seattle, WA, USA" },
-    { id: 2, date: 'Apr 2021', extraText: "Started working as", company: 'Amazon', position: 'Frontend Engineer', icon: "fa fa-briefcase", location: "Seattle, WA, USA" },
-    { id: 3, date: 'Jan 2019', extraText: "Started working as", company: 'Pacific Northwest Nationl Laboratory', position: 'Post Master Research Associate', icon: "fa fa-briefcase", location: "Richland, WA, USA" },
-    { id: 4, date: 'May 2018', extraText: "graduated with", company: 'Northeastern University', position: 'Masters Degree in Computer Science', icon: "fa fa-graduation-cap", location: "Seattle, WA, USA" },
-    { id: 5, date: 'Aug 2017', extraText: "Started working as", company: 'Northeastern University', position: 'Graduate Teaching Assistant', icon: "fa fa-briefcase", location: "Seattle, WA, USA" },
-    { id: 5, date: 'Sept 2016', extraText: "start persuing", company: 'Northeastern University', position: 'Masters Degree in Computer Science', icon: "fa fa-briefcase", location: "Seattle, WA, USA" },
-    { id: 6, date: 'May 2015', extraText: "graduated with", company: 'Jaipur Engineer College Research Center', position: 'Bachloers degree in Information technology', icon: "fa fa-graduation-cap", location: "Jaipur, Rajasthan, India" },
-    { id: 7, date: 'May 2011', extraText: "graduated from", company: 'L.K.Shinghania Education Center', position: 'High School', icon: "fa fa-graduation-cap", location: "Gotan, Rajasthan, India" },
-
+    { id: 0, date: 'May 2024', company: 'ARVI', extraText: 'Started working as', position: 'Software Engineer (Frontend-Focused)', icon: "fa fa-briefcase", },
+    { id: 1, date: 'Dec 2022', company: 'Ford Motor Company', extraText: 'Started working as', position: 'Software Engineer', icon: "fa fa-briefcase",  },
+    { id: 2, date: 'Apr 2021', company: 'Amazon Web Services', extraText: 'Started working as', position: 'Frontend Engineer', icon: "fa fa-briefcase", },
+    { id: 3, date: 'Jan 2019', company: 'Pacific Northwest National Laboratory', extraText: 'Started working as', position: "Post-Master's Research Associate", icon: "fa fa-briefcase"},
+    { id: 4, date: 'May 2018', company: 'Northeastern University', extraText: 'Graduated with', position: "Master's Degree in Computer Science", icon: "fa fa-graduation-cap"},
+    { id: 6, date: 'May 2015', company: 'Jaipur Engineering College and Research Centre', extraText: 'Graduated with', position: "Bachelor's Degree in Information Technology", icon: "fa fa-graduation-cap"},
   ];
 
   useEffect(() => {
-    const newTimeline = [];
-    for (let i = 0; i < events.length; i++) {
-      if (i < events.length) {
-        newTimeline.push(
-          <div key={events[i].id} className="event-description ">
-            <div className="time-description-container">
-              <div className="time-description">
-                <i className={`${events[i].icon} event-icon`} aria-hidden="true"></i>
-                <p>{events[i].company}</p>
-                <p className="timeline-extra-text"><em>{events[i].extraText}</em></p>
-                <div className="title-description">
-                  <p className="timeline-position">{events[i].position}</p>
-                  <p>{events[i].location}</p>
-                </div>
-              </div>
-            </div>
-            <div className="under-line">
-              <div className="continue-line"></div>
-              <div>
-                <div className="timeline-connection"></div>
-                <div className="timeline-event"></div>
-              </div>
-              <div className="next-line"></div>
-            </div>
-            <p className="event-date">{events[i].date}</p>
-          </div>
+    const timelineElement = scrollableDivRef.current;
+
+    if (!timelineElement) {
+      return undefined;
+    }
+
+    let animationFrameId;
+    let isActive = true;
+
+    const updateTimelineOverflow = () => {
+      cancelAnimationFrame(animationFrameId);
+
+      animationFrameId = requestAnimationFrame(() => {
+        if (!isActive) {
+          return;
+        }
+
+        const hasHorizontalOverflow =
+          timelineElement.scrollWidth > timelineElement.clientWidth + 1;
+
+        setIsTimelineScrollable((currentValue) =>
+          currentValue === hasHorizontalOverflow
+            ? currentValue
+            : hasHorizontalOverflow
         );
+      });
+    };
+
+    updateTimelineOverflow();
+    window.addEventListener("resize", updateTimelineOverflow);
+
+    if (document.fonts?.ready) {
+      document.fonts.ready.then(updateTimelineOverflow);
+    }
+
+    return () => {
+      isActive = false;
+      cancelAnimationFrame(animationFrameId);
+      window.removeEventListener("resize", updateTimelineOverflow);
+    };
+  }, []);
+
+  const scroll = (event) => {
+    const { scrollLeft, scrollWidth, clientWidth } = event.currentTarget;
+    setIsTimelineAtStart(scrollLeft <= 2);
+
+    const maxScroll = scrollWidth - clientWidth;
+    if (maxScroll <= 0) return;
+
+    const depth = Math.round((scrollLeft / maxScroll) * 100);
+    [25, 50, 75, 100].forEach((milestone) => {
+      if (depth >= milestone && !timelineScrollMilestones.current.has(milestone)) {
+        timelineScrollMilestones.current.add(milestone);
+        trackEvent("timeline_scroll", { percent: milestone });
       }
-    }
-    setTimeline(newTimeline);
-  }, [start, end]);
-
-  const scroll = (scrollOffset) => {
-
-    if (!nextButtonClicked) {
-      setNextButtonClicked(true);
-    }
+    });
   };
 
   return (<>
     <div ref={ref} id="timeline" className="timeline-box">
-      <div className="div-heading fade-in-y">
-        <p>TIMELINE</p>
-      </div>
-      <div onScroll={scroll} ref={scrollableDivRef} className="timeline-container fade-in-x">
+      <h2 className="div-heading fade-in-y">TIMELINE</h2>
+      <div className="timeline-container fade-in-x">
         <div className="timeline ">
-          <div className="timeline-content">
+          <div onScroll={scroll} ref={scrollableDivRef} className="timeline-content">
 
-            <div className="instruction-text">
-            <p>Scroll to see more <i class="fa fa-arrow-right nextButton"></i></p>
-              {/* {
-                !nextButtonClicked && <p>Scroll to see more <i class="fa fa-arrow-right nextButton"></i></p>
-              } */}
-            </div>
+            {isTimelineScrollable && (
+              <div
+                className={`instruction-text ${
+                  isTimelineAtStart ? "" : "instruction-text-hidden"
+                }`}
+                aria-hidden={!isTimelineAtStart}
+              >
+                <p>Scroll to see more <i className="fa fa-arrow-right nextButton" aria-hidden="true"></i></p>
+              </div>
+            )}
             <div className="timeline-text ">
-              {timeline}
+              {events.map((event) => (
+                <div key={event.id} className="event-description ">
+                  <div className="time-description-container">
+                    <div className="time-description">
+                      <i className={`${event.icon} event-icon`} aria-hidden="true"></i>
+                      <div className="timeline-company-band">
+                        <p className="timeline-company">{event.company}</p>
+                        <p className="timeline-extra-text">{event.extraText}</p>
+                        <p className="timeline-position">{event.position}</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="under-line">
+                    <div className="continue-line"></div>
+                    <div>
+                      <div className="timeline-connection"></div>
+                      <div className="timeline-event"></div>
+                    </div>
+                    <div className="next-line"></div>
+                  </div>
+                  <p className="event-date">{event.date}</p>
+                </div>
+              ))}
             </div>
           </div>
-        </div>
-        <div className="timeline-buttons">
         </div>
       </div>
     </div>
